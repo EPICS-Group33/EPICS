@@ -11,8 +11,17 @@ config_version=5
 [application]
 
 config/name="EPICS"
-config/features=PackedStringArray("4.1", "Mobile")
+run/main_scene="res://Scenes/Main.tscn"
+config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=540
+window/size/viewport_height=960
+window/stretch/mode="viewport"
+window/handheld/orientation=1
+window/vsync/vsync_mode=0
 
 [rendering]
 

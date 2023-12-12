@@ -1,3 +1,61 @@
-[gd_scene format=3 uid="uid://ov62fkqsefhw"]
+[gd_scene load_steps=3 format=3 uid="uid://ov62fkqsefhw"]
+
+[ext_resource type="Theme" uid="uid://db34oipj8k43c" path="res://Assets/Themes/DefaultTheme.res" id="1_tyinr"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_kimf6"]
+size = Vector2(300, 300)
 
 [node name="Main" type="Node"]
+
+[node name="TestPanel" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="TestPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_tyinr")
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_bottom = 200
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TestPanel/MarginContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="TextureButton" type="TextureButton" parent="TestPanel/MarginContainer/VBoxContainer"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = SubResource("PlaceholderTexture2D_kimf6")
+
+[node name="MarginContainer" type="MarginContainer" parent="TestPanel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_tyinr")
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBox" type="HBoxContainer" parent="TestPanel/MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="AddImageButton" type="Button" parent="TestPanel/MarginContainer/VBoxContainer/MarginContainer/HBox"]
+layout_mode = 2
+theme = ExtResource("1_tyinr")
+text = "Add Image"
+
+[node name="TestModelButton" type="Button" parent="TestPanel/MarginContainer/VBoxContainer/MarginContainer/HBox"]
+layout_mode = 2
+text = "Test Model
+"
