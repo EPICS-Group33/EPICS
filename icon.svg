@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50000"
+   height="50000"
+   viewBox="0 0 50000 50000"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="C:\Users\rishi\AppData\Local\Temp\ink_ext_XXXXXX.svgTQ7LF2"
+   inkscape:export-filename="icon.svg"
+   inkscape:export-xdpi="1"
+   inkscape:export-ydpi="1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="0.25"
+     inkscape:cx="30.0"
+     inkscape:cy="30.0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid20" />
+  </sodipodi:namedview>
+  <defs
+     id="defs9" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(25700,39700)">
+    <circle
+       style="fill:#f9f9f9;stroke-width:0.877193"
+       id="path295"
+       cx="-700"
+       cy="-14700"
+       r="25000" />
+    <circle
+       style="fill:#1a1a1a;stroke-width:0.877193"
+       id="path297"
+       cx="-612.2807"
+       cy="-14700"
+       r="17631.578" />
+    <circle
+       style="fill:#333333;stroke-width:0.383084"
+       id="path297-4"
+       cx="-700"
+       cy="-14900"
+       r="7700" />
+  </g>
+</svg>
