@@ -6,14 +6,188 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=5
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "SQLiteWrapper",
+"language": "GDScript",
+"path": "res://addons/godot-sqlite/godot-sqlite-wrapper.gd"
+}, {
+"base": "Reference",
+"class": "SVGArcs",
+"language": "GDScript",
+"path": "res://addons/godot_svg/utility/svg_arcs.gd"
+}, {
+"base": "Reference",
+"class": "SVGAttributeParser",
+"language": "GDScript",
+"path": "res://addons/godot_svg/utility/svg_attribute_parser.gd"
+}, {
+"base": "Resource",
+"class": "SVGClockValue",
+"language": "GDScript",
+"path": "res://addons/godot_svg/resource/svg_clock_value.gd"
+}, {
+"base": "Reference",
+"class": "SVGCollision",
+"language": "GDScript",
+"path": "res://addons/godot_svg/utility/svg_collision.gd"
+}, {
+"base": "Reference",
+"class": "SVGCubics",
+"language": "GDScript",
+"path": "res://addons/godot_svg/utility/svg_cubics.gd"
+}, {
+"base": "Reference",
+"class": "SVGDelaunay",
+"language": "GDScript",
+"path": "res://addons/godot_svg/utility/svg_delaunay.gd"
+}, {
+"base": "Reference",
+"class": "SVGEarcut",
+"language": "GDScript",
+"path": "res://addons/godot_svg/utility/svg_earcut.gd"
+}, {
+"base": "Reference",
+"class": "SVGHelper",
+"language": "GDScript",
+"path": "res://addons/godot_svg/utility/svg_helper.gd"
+}, {
+"base": "Resource",
+"class": "SVGLengthPercentage",
+"language": "GDScript",
+"path": "res://addons/godot_svg/resource/svg_length_percentage.gd"
+}, {
+"base": "Reference",
+"class": "SVGMath",
+"language": "GDScript",
+"path": "res://addons/godot_svg/utility/svg_math.gd"
+}, {
+"base": "Resource",
+"class": "SVGPaint",
+"language": "GDScript",
+"path": "res://addons/godot_svg/resource/svg_paint.gd"
+}, {
+"base": "Reference",
+"class": "SVGPaintServer",
+"language": "GDScript",
+"path": "res://addons/godot_svg/utility/svg_paint_server.gd"
+}, {
+"base": "Reference",
+"class": "SVGPathSolver",
+"language": "GDScript",
+"path": "res://addons/godot_svg/utility/svg_path_solver.gd"
+}, {
+"base": "Reference",
+"class": "SVGPolygonSolver",
+"language": "GDScript",
+"path": "res://addons/godot_svg/utility/svg_polygon_solver.gd"
+}, {
+"base": "Resource",
+"class": "SVGResource",
+"language": "GDScript",
+"path": "res://addons/godot_svg/resource/svg_resource.gd"
+}, {
+"base": "Resource",
+"class": "SVGResourceElement",
+"language": "GDScript",
+"path": "res://addons/godot_svg/resource/svg_resource_element.gd"
+}, {
+"base": "ResourceFormatLoader",
+"class": "SVGResourceFormatLoader",
+"language": "GDScript",
+"path": "res://addons/godot_svg/import/svg_resource_loader.gd"
+}, {
+"base": "ResourceFormatSaver",
+"class": "SVGResourceFormatSaver",
+"language": "GDScript",
+"path": "res://addons/godot_svg/import/svg_resource_saver.gd"
+}, {
+"base": "Reference",
+"class": "SVGTessellation",
+"language": "GDScript",
+"path": "res://addons/godot_svg/utility/svg_tessellation.gd"
+}, {
+"base": "Reference",
+"class": "SVGTriangulation",
+"language": "GDScript",
+"path": "res://addons/godot_svg/utility/svg_triangulation.gd"
+}, {
+"base": "Reference",
+"class": "SVGValueConstant",
+"language": "GDScript",
+"path": "res://addons/godot_svg/utility/svg_value_constant.gd"
+} ]
+_global_script_class_icons={
+"SQLiteWrapper": "",
+"SVGArcs": "",
+"SVGAttributeParser": "",
+"SVGClockValue": "",
+"SVGCollision": "",
+"SVGCubics": "",
+"SVGDelaunay": "",
+"SVGEarcut": "",
+"SVGHelper": "",
+"SVGLengthPercentage": "",
+"SVGMath": "",
+"SVGPaint": "",
+"SVGPaintServer": "",
+"SVGPathSolver": "",
+"SVGPolygonSolver": "",
+"SVGResource": "",
+"SVGResourceElement": "",
+"SVGResourceFormatLoader": "",
+"SVGResourceFormatSaver": "",
+"SVGTessellation": "",
+"SVGTriangulation": "",
+"SVGValueConstant": ""
+}
 
 [application]
 
 config/name="EPICS"
-config/features=PackedStringArray("4.1", "Mobile")
-config/icon="res://icon.svg"
+run/main_scene="res://Scenes/Main.tscn"
+run/low_processor_mode=true
+boot_splash/image="res://icon.png"
+boot_splash/fullsize=false
+boot_splash/bg_color=Color( 0.0980392, 0.0901961, 0.0901961, 1 )
+config/icon="res://icon.png"
+config/macos_native_icon="res://icon.icns"
+
+[display]
+
+window/size/width=540
+window/size/height=960
+window/size/resizable=false
+window/size/borderless=true
+window/size/test_width=540
+window/size/test_height=960
+window/vsync/use_vsync=false
+window/energy_saving/keep_screen_on=false
+window/handheld/orientation="portrait"
+
+[filesystem]
+
+import/fbx/use_fbx=false
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[mono]
+
+project/assembly_name="EPICS"
+
+[physics]
+
+2d/use_bvh=false
+common/enable_object_picking=false
 
 [rendering]
 
-renderer/rendering_method="mobile"
+quality/driver/fallback_to_gles2=true
