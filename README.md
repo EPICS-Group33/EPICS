@@ -5,7 +5,7 @@ DSN3099
 
 Project : Patient Risk Profiling and Care Management Tool
 ======
-![logo][./web/content/logo.png]
+![logo](./web/content/logo.png)
 
 ## Brief
 Brief about the project
@@ -76,9 +76,9 @@ Due to increasing knowledge to increase in scientific knowledge and sophisticati
 ---
 
 # References
-[1.^]Klasnja, P., Pratt, W., & Paasche-Orlow, M. K. (2017). Mobile health apps for promoting healthy behaviors: A systematic review and meta-analysis. Journal of medical Internet research, 19(3), e83.
-[2.^]Mitesh, A., & Singh, S. K. (2019). Mobile health apps for early detection and prevention of non-communicable diseases: A narrative review. Journal of Clinical and Diagnostic Research, 13(11), FE01-FE05.
-[3.^]Ventola, C. L. (2014). Mobile apps for the healthcare professional: Benefits, risks, and a framework for evaluation. Pharmacy and Therapeutics, 39(4), 280-287.
+[^1]: Klasnja, P., Pratt, W., & Paasche-Orlow, M. K. (2017). Mobile health apps for promoting healthy behaviors: A systematic review and meta-analysis. Journal of medical Internet research, 19(3), e83.
+[^2]: Mitesh, A., & Singh, S. K. (2019). Mobile health apps for early detection and prevention of non-communicable diseases: A narrative review. Journal of Clinical and Diagnostic Research, 13(11), FE01-FE05.
+[^3]: Ventola, C. L. (2014). Mobile apps for the healthcare professional: Benefits, risks, and a framework for evaluation. Pharmacy and Therapeutics, 39(4), 280-287.
 
 ---
 
