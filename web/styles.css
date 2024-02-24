@@ -1,8 +1,29 @@
 /* Themes */
 
 :root {
-    --pallete: white;
+    font-size: 16px;
+    font-family: 'Roboto';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec; 
+    --bg-primary: #23232e;
+    --bt-secondary: #141418;
+
+    --transition-speed: 600ms;
+    
+    --medium-blue: #3879D7;
+    --dark-blue: #004C99;
+    --light-orange: #F29949;
+    --dark-orange: #FF8533;
+    --seafoam-green: #2DC5A6;
+    --dark-green:  #19A091;
+    --white: white;
+    --bg-black: #111111;
+    --black: #333333;
     --gray-0: gray;
+    --gray-1: gray;
+    --gray-2: gray;
+    --gray-3: gray;
+    --gray-4: gray;
 }
 
 .light {
@@ -14,13 +35,29 @@
 }
 
 .solar {
-
+    --gray-0: gray;
+    --gray-1: gray;
+    --gray-2: gray;
+    --gray-3: gray;
+    --gray-4: gray;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
 }
 
 ul {
@@ -41,6 +78,70 @@ a {
     color: white;
 }
 
+.navbar2 {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 600 ms ease;
+}
+
+.navbar-nav2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item2 {
+    width: 100%;
+}
+
+.nav-item2:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+}
+
+.nav-link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link svg {
+    width: 2rem;
+    min-width:2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar2:hover {
+    width: 16rem;
+}
+
+.navbar2:hover .nav-link-text {
+    display: block;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
 .navbar-nav {
     display: flex;
     align-items: center;
@@ -54,8 +155,8 @@ header {
     margin-bottom: 1em;
     padding-bottom: 3.5em;
     text-align: center;
-    clip-path: polygon(50% 0%, 100% 0%, 100% 65%, 50% 100%, 0 65%, 0 0);
 }
+
 .dropdown {
     position: absolute;
     width: 500px;
