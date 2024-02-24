@@ -1,11 +1,11 @@
-# EPICS
-EPICS Project 
-DSN3099 
+#### EPICS Project 
+#### DSN3099
 ---
 
 Project : Patient Risk Profiling and Care Management Tool
 ======
-![logo](./web/content/logo.png)
+
+![logo](./web/content/images/logo.png)
 
 ## Brief
 Brief about the project
@@ -13,14 +13,14 @@ Brief about the project
 ---
 
 ## Task List
-- [X] Research and Develpoment
-- [X] Initial Work
-- [ ] Source Dataset
-- [ ] AI and ML Models
-- [ ] Create App
-- [ ] Create Website
-- [ ] Implementing Core Features
-- [ ] Additional Features
+- [X]  Research and Develpoment
+- [X]  Initial Work
+- [ ]  Source Dataset
+- [ ]  AI and ML Models
+- [ ]  Create App
+- [ ]  Create Website
+- [ ]  Implementing Core Features
+- [ ]  Additional Features
 
 
 ## Aim
@@ -89,7 +89,7 @@ Due to increasing knowledge to increase in scientific knowledge and sophisticati
 
 # Links
 
-[WebApp](./web/index.html)
+[WebApp](./web/index.html)  
 [Architecture](./design/Architecture&UserFlow.html)
 
 ---
