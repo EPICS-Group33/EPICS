@@ -12,10 +12,15 @@ Brief about the project
 
 ---
 
-# Task List
+## Task List
+- [X] Research and Develpoment
+- [X] Initial Work
 - [ ] Source Dataset
-- [ ] ML models
-- [ ] Create App and Website
+- [ ] AI and ML Models
+- [ ] Create App
+- [ ] Create Website
+- [ ] Implementing Core Features
+- [ ] Additional Features
 
 
 ## Aim
@@ -84,7 +89,8 @@ Due to increasing knowledge to increase in scientific knowledge and sophisticati
 
 # Links
 
-[Website](https://www.github.com/RishikeshMVITB/EPICS/)
+[WebApp](./web/index.html)
+[Architecture](./design/Architecture&UserFlow.html)
 
 ---
 
@@ -92,12 +98,12 @@ Due to increasing knowledge to increase in scientific knowledge and sophisticati
 
 |Professional   | Doctors, Nurses, Pramedics, Trainers, Advisors|
 |Participant    | User, Patient                                 |
-|Instrument     | Product                                       |
+|Instrument     | Product, Tool                                 |
 
 ---
 
 ## Group
-Group 33
+### Group 33
 
 1. Ankit Sankar                 21BCG10075  
 2. Ashutosh Kumar Shrivastava   21BAC10005  

@@ -4,7 +4,7 @@
     <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Patient Risk Profiling">
+    <meta name="description" content="Website for Health App: a tool for patient risk profiling and care management">
 
     <title>Health App</title>
 
@@ -20,38 +20,59 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Script -->
-    <script defer src = "scripts.js"></script>
+    <script defer src="app.js"></script>
 
 </head>
 
 <body class="light">
 
-    <header>
-        <h1>Health App</h1>
-        <p> Patient Risk Profiling </p>
-    </header>
-
     <nav class="navbar">
         <ul class = "navbar-nav">
-            <li class="nav-item"><img src = "./content/images/logo.png" class ="logo"></li>
             <li class="nav-item"> Home </li>
             <li class="nav-item"> Search </li>
             
             <!-- Dropdown-->
+            <li class="nav-item has-dropdown">
+                <a href="#">Theme</a>
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="#" id="button-light">Light</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" id="button-dark">Dark</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" id="button-solarize">Solarize</a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Maybe use a select?-->
 
             <li class = "nav-item"> Login </li>
         </ul>
     </nav>
 
+    <header>
+        <img src="./content/images/logo.png" alt="logo-large">
+        <h1>Health App</h1>
+        <p>Patient Risk Profiling</p>
+        
+    </header>
+
     <main>
-        <section id="section-into">
-
+        <!-- Info Section -->
+        <section id="section-info">
+            <p></p>
         </section>
 
+        <!-- Main Section -->
         <section id="section-main">
-
+            <img src="" alt="">
+            
         </section>
 
+        <!-- Main Aricle -->
         <article>
             <caption></caption>
             <figure></figure>
@@ -64,6 +85,7 @@
             </p>
         </article>
 
+        <!-- Aside -->
         <aside>
             <details>
                 <summary>
@@ -80,7 +102,6 @@
             </details>
         </aside>
 
-
     </main>
 
     <footer>
@@ -91,5 +112,6 @@
             <a href="" id="a-social"></a>
         </address>
     </footer>
+
 </body>
 </html>
