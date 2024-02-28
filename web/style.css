@@ -289,7 +289,6 @@
 }
 .teleport-show {
   display: flex !important;
-  transform: none !important;
 }
 .heading1 {
   font-size: 48px;
