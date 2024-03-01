@@ -1,3 +1,0 @@
-https://www.cdc.gov/outbreaks/index.html
-
-Read data from this page and display in ourr website

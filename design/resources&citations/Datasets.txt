@@ -1,5 +1,57 @@
 Datasets
 
+// General
+
+https://physionet.org/about/database/
+
+https://mimic.mit.edu/
+
+https://cdas.cancer.gov/datasets/idata/189/
+
+// Disease and symptoms
+
+https://www.kaggle.com/datasets/uom190346a/disease-symptoms-and-patient-profile-dataset
+https://huggingface.co/datasets/duxprajapati/symptom-disease-dataset
+https://www.kaggle.com/datasets/pjmathematician/diseases-and-symptoms
+https://people.dbmi.columbia.edu/~friedma/Projects/DiseaseSymptomKB/
+https://www.nlm.nih.gov/research/umls/sourcereleasedocs/current/DDB/index.html
+
+    // Research
+    https://ieeexplore.ieee.org/document/9753707
+    https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3661426
+
+// Vision
+
+https://catalog.data.gov/dataset/american-community-survey-acs-vision-and-eye-health-surveillance-0f989
+
+// Oral health
+
+https://www.cdc.gov/oralhealthdata/overview/Adult-Indicators.html
+
+// Chronic Diseases
+
+https://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi
+
+// Alzheimers
+
+https://catalog.data.gov/dataset/alzheimers-disease-and-healthy-aging-data
+
+// Mental health
+    // Anxiety
+    https://catalog.data.gov/dataset/indicators-of-anxiety-or-depression-based-on-reported-frequency-of-symptoms-during-last-7-
+
+
+
+// Urine
+
+https://www.researchgate.net/figure/Dataset-for-Urine-Test-Samples_tbl3_358551403
+
+// Blood
+
+https://futurebloodtesting.org/open-datasets/
+
+// Scans
+
 https://openneuro.org/
 
 https://onlinelibrary.wiley.com/doi/10.1002/jmri.29101
@@ -48,3 +100,8 @@ https://archive.ics.uci.edu/dataset/760/multivariate+gait+data
 // Practice
 
 https://archive.ics.uci.edu/dataset/880/support2
+
+
+// Learning Resources
+
+https://catalog.data.gov/dataset/learning-resources-database-f3a5b

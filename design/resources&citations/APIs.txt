@@ -1,6 +1,22 @@
 APIs
 
-// FDA, forr banned and recalled substances
+// General
+
+https://open.cdc.gov/apis.html
+
+https://rapidapi.com/category/Medical
+
+https://www.rods.pitt.edu/content/category/8/22/36/index.html
+
+https://disease.sh/
+
+// Read data from these page and display in our website
+
+https://www.cdc.gov/outbreaks/index.html
+
+https://www.who.int/api/emergencies/diseaseoutbreaknews/sfhelp
+
+// FDA, for banned and recalled substances
+
 https://open.fda.gov/apis/
 
-//Disease Ontology Lookup
