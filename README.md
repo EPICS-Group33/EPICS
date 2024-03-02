@@ -106,7 +106,7 @@ Due to increasing knowledge to increase in scientific knowledge and sophisticati
 ### Group 33
 
 1. Ankit Sankar                 21BCG10075  
-2. Ashutosh Kumar Shrivastava   21BAC10005  
+2. Ashutosh Kumar Srivastava    21BAC10005  
 3. Chethan Khoche               21BCG10100  
 4. Devansh Trivedi              21BCE11407  
 5. GPV Mruthunjai               21BCE11559  
