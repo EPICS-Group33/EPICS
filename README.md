@@ -15,11 +15,11 @@ Brief about the project
 ## Task List
 - [X]  Research and Development
 - [X]  Initial Work
-- [ ]  Source Dataset
-- [ ]  AI and ML Models
-- [ ]  Create App
-- [ ]  Create Website
-- [ ]  Implementing Core Features
+- [X]  Source Dataset
+- [X]  AI and ML Models
+- [ ]  Create App (Ongoing)
+- [ ]  Create Website (Ongoing)
+- [ ]  Implementing Core Features (Ongoing) 
 - [ ]  Additional Features
 
 
@@ -76,7 +76,9 @@ Decisions are not made just upon the projection of the outcome of these instrume
 
 ## Conclusion
 
-Due to increasing knowledge to increase in scientific knowledge and sophistication of that knowledge, more is known about health determinants, behaviors, risk factors, and their distribution among populations
+Advancements in scientific research have yielded a deeper understanding of health determinants, behaviors, risk factors, and their prevalence across different populations. While this has empowered individuals with greater access to health knowledge, it has also created a situation where some may struggle to discern reliable information, particularly regarding urgent medical situations. This highlights the need for trustworthy resources that can alleviate confusion and provide accurate guidance.
+
+The proposed work directly addresses this challenge by offering a tool that serves two key purposes. First, it acts as a reliable source of health information, mitigating the confusion caused by the abundance of online resources. Second, the tool facilitates the identification of health risks, enabling a more efficient and targeted allocation of resources within the healthcare system.
 
 ---
 
