@@ -1,4 +1,14 @@
-MeshInstance3D
-FogVolume
+SubViewport
+SubViewportContainer
+MarginContainer
+ProgressBar
+HBoxContainer
+ItemList
+VBoxContainer
+Button
+Panel
+TextEdit
+Control
+SpringArm3D
 Camera3D
-Node3D
+MeshInstance3D
