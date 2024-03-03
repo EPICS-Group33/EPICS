@@ -1,9 +1,5 @@
 res://Scenes/Visualizer.scn
-res://Content/Shaders/raymarch.gdshader
-res://Content/Materials/raymarch.material
-res://Test/main.tscn
-res://slice_viewer.gdshader
 res://Content/Shaders/slice_viewer.gdshader
-res://Content/Materials/transparency reference.tres
+res://Content/Shaders/raymarch.gdshader
 res://Content/Scripts/Manager.gd
-res://Content/Scripts/UIManager.gd
+res://User/combined_texture.tres

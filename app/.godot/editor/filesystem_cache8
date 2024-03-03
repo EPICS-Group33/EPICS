@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709454050
+::res://::1709454937
 export_presets.cfg::TextFile::-1::1708765364::0::1::::<><>::
 icon.png::CompressedTexture2D::6275500101720105950::1708765364::1709133417::1::::<><>::
 icon.svg::CompressedTexture2D::5294565377125021948::1708765364::1709133417::1::::<><>::
@@ -21,21 +21,21 @@ Roboto-ThinItalic.ttf::FontFile::541036127371378080::1708765363::1709133417::1::
 raymarch.material::ShaderMaterial::3285200915189569340::1709447046::0::1::::<><>::res://Content/Shaders/raymarch.gdshader
 transparency reference.tres::StandardMaterial3D::1837740780026702757::1709448172::0::1::::<><>::
 ::res://Content/Scripts/::1709454050
-Manager.gd::GDScript::-1::1709449173::0::1::::Manager<>Node3D<>::
 CameraController.gd::GDScript::-1::1709449099::0::1::::<>SpringArm3D<>::
+Manager.gd::GDScript::-1::1709449173::0::1::::Manager<>Node3D<>::
 MRIViewer.gd::GDScript::-1::1709454050::0::1::::<>MeshInstance3D<>::
 SliceViewer.gd::GDScript::-1::1709448966::0::1::::<>MeshInstance3D<>::
 UIManager.gd::GDScript::-1::1709448753::0::1::::UIManager<>Control<>::
-::res://Content/Shaders/::1709454050
-raymarch.gdshader::Shader::-1::1709452567::0::1::::<><>::
+::res://Content/Shaders/::1709454310
+raymarch.gdshader::Shader::-1::1709454310::0::1::::<><>::
 scroll_viewer.gdshader::Shader::-1::1709454050::0::1::::<><>::
-slice_viewer.gdshader::Shader::-1::1709452567::0::1::::<><>::
+slice_viewer.gdshader::Shader::-1::1709454310::0::1::::<><>::
 ::res://Content/Textures/::1702793605
 ::res://Content/Themes/::1708765363
 default_theme.theme::Theme::-1::1708765363::0::1::::<><>::res://Content/Fonts/Roboto-Regular.ttf
-::res://Scenes/::1709452567
-Visualizer.scn::PackedScene::8150792998502319126::1709452567::0::1::::<><>::res://Content/Scripts/Manager.gd<>res://Content/Shaders/slice_viewer.gdshader<>res://Content/Scripts/SliceViewer.gd<>res://Content/Scripts/CameraController.gd<>res://Content/Scripts/UIManager.gd
-::res://User/::1709454050
+::res://Scenes/::1709454306
+Visualizer.scn::PackedScene::8150792998502319126::1709454306::0::1::::<><>::res://Content/Scripts/Manager.gd<>res://Content/Shaders/slice_viewer.gdshader<>res://Content/Scripts/SliceViewer.gd<>res://Content/Scripts/CameraController.gd<>res://Content/Scripts/UIManager.gd
+::res://User/::1709454071
 .gitignore.txt::TextFile::-1::1709454050::0::1::::<><>::
 slice_000.png::CompressedTexture2D::1167426545836934250::1709454050::1709454071::1::::<><>::
 slice_001.png::CompressedTexture2D::3648115809306663597::1709454050::1709454070::1::::<><>::
