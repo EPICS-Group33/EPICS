@@ -1,3 +1,5 @@
 res://scenes/main_menu.scn
 res://assets/shaders/slice_viewer.gdshader
 res://assets/materials/slice_viewer.material
+res://assets/theme/default_theme.theme
+res://scenes/user-dashboard.scn

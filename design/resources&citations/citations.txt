@@ -1,3 +1,15 @@
+// Health App
+
 1. Klasnja, P., Pratt, W., & Paasche-Orlow, M. K. (2017). Mobile health apps for promoting healthy behaviors: A systematic review and meta-analysis. Journal of medical Internet research, 19(3), e83.
 2. Mitesh, A., & Singh, S. K. (2019). Mobile health apps for early detection and prevention of non-communicable diseases: A narrative review. Journal of Clinical and Diagnostic Research, 13(11), FE01-FE05.
 3. Ventola, C. L. (2014). Mobile apps for the healthcare professional: Benefits, risks, and a framework for evaluation. Pharmacy and Therapeutics, 39(4), 280-287.
+
+// Gamification
+
+Daniel Johnson, Sebastian Deterding, Kerri-Ann Kuhn, Aleksandra Staneva, Stoyan Stoyanov, Leanne Hides, Gamification for health and wellbeing: A systematic review of the literature, Internet Interventions, ISSN 2214-7829
+Pereira, P., Duarte, E., Rebelo, F., Noriega, P. (2014). A Review of Gamification for Health-Related Contexts. In: Marcus, A. (eds) Design, User Experience, and Usability. User Experience Design for Diverse Interaction Platforms and Environments. DUXU 2014.
+King D, Greaves F, Exeter C, Darzi A. ‘Gamification’: Influencing health behaviours with games. Journal of the Royal Society of Medicine. 2013;106(3):76-78
+van Gaalen, A.E.J., Brouwer, J., Schönrock-Adema, J. et al. Gamification of health professions education: a systematic review. Adv in Health Sci Educ 26, 683–711 (2021).
+Sean A. Munson, Erika Poole, Daniel B. Perry, Tamara Peyton, 2015. "Gamification and Health", The Gameful World: Approaches, Issues, Applications, Steffen P. Walz, Sebastian Deterding
+Muangsrinoon, S.; Boonbrahm, P. Game elements from literature review of gamification in healthcare context. "JOTSE: Journal of Technology and Science Education", Febrer 2019, vol. 9, núm. 1, p. 20-31. 
+Lamyae Sardi, Ali Idri, José Luis Fernández-Alemán, A systematic review of gamification in e-Health,Journal of Biomedical Informatics,Volume 71,2017,Pages 31-48,ISSN 1532-0464.
