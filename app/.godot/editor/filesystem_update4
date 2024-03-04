@@ -1,5 +1,3 @@
-res://Scenes/Visualizer.scn
-res://Content/Shaders/slice_viewer.gdshader
-res://Content/Shaders/raymarch.gdshader
-res://Content/Scripts/Manager.gd
-res://User/combined_texture.tres
+res://scenes/main_menu.scn
+res://assets/shaders/slice_viewer.gdshader
+res://assets/materials/slice_viewer.material

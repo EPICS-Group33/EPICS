@@ -10,45 +10,13 @@ config_version=5
 
 [application]
 
-config/name="EPICS"
-run/main_scene="res://Scenes/Visualizer.scn"
-config/features=PackedStringArray("4.2")
-run/low_processor_mode=true
-boot_splash/bg_color=Color(0.0980392, 0.0901961, 0.0901961, 1)
-boot_splash/image="res://icon.png"
-boot_splash/fullsize=false
-config/icon="res://icon.png"
-config/macos_native_icon="res://icon.icns"
-
-[display]
-
-window/energy_saving/keep_screen_on=false
-window/vsync/vsync_mode=0
-window/ios/allow_high_refresh_rate=false
-window/ios/hide_status_bar=false
-window/ios/suppress_ui_gesture=false
-
-[filesystem]
-
-import/fbx/use_fbx=false
-
-[gui]
-
-common/drop_mouse_on_gui_input_disabled=true
-
-[input_devices]
-
-pointing/emulate_touch_from_mouse=true
-
-[mono]
-
-project/assembly_name="EPICS"
-
-[physics]
-
-common/enable_object_picking=false
-2d/use_bvh=false
+config/name="RiskPro"
+config/features=PackedStringArray("4.2", "GL Compatibility")
+boot_splash/bg_color=Color(0.0627451, 0.0627451, 0.0627451, 1)
+config/icon="res://icon.svg"
 
 [rendering]
 
-quality/driver/fallback_to_gles2=true
+renderer/rendering_method="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.0745098, 0.0745098, 0.0745098, 1)

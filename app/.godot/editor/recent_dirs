@@ -1,4 +1,5 @@
-res://Content/Scripts
-res://Content/Shaders
-res://Content/Materials
-res://Scenes
+res://assets/theme
+res://
+res://scenes
+res://assets/shaders
+res://assets/materials
