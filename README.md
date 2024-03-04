@@ -122,7 +122,7 @@ The proposed work directly addresses this challenge by offering a tool that serv
 6. Rishabh Pradhaan             21BCE11342  
 7. Rishikesh M                  21BCG10072  
 8. Siddharth Dayal              21BCY10019  
-9. Yashsh Sujithkumar Randive   21BCE11334  
+9. Yashsh Sujithkumar Randive   21BCE11334 
 
 
 VIT Bhopal 2023-24
