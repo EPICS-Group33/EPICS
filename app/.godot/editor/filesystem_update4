@@ -1,5 +1,5 @@
-res://scenes/main_menu.scn
 res://assets/shaders/slice_viewer.gdshader
-res://assets/materials/slice_viewer.material
-res://assets/theme/default_theme.theme
+res://MRI_Scroll.gd
+res://assets/Scripts/mri_scroll.tscn
+res://scenes/slice_viewer.scn
 res://scenes/user-dashboard.scn
