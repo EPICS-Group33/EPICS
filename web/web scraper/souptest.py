@@ -15,13 +15,13 @@ def Main_list_of_diseases(link):
         writer = csv.writer(file)
         writer.writerow(['Text', 'Link'])
 
-        d1 = soup.find_all('div' , class_ = 'pannel_wrapper_container')
-        for d2 in d1 :
-            for ul in d2.find_all('ul', class_='a_z_listing'):
-                ul.extract()
-            for d3 in d2.find_all('li'):  
+        disease_container = soup.find_all('div' , class_ = 'pannel_wrapper_container')
+        for disease_lists in disease_container :
+            for unwanted_lists in disease_lists.find_all('ul', class_='a_z_listing'):
+                unwanted_lists.extract()
+            for wanted_lists in disease_lists.find_all('li'):  
                 '''print(f'{d3.a}')'''
-                link = d3.a
+                link = wanted_lists.a
                 text = link.get_text()
                 href = link['href']
                 '''print(f'{text} link = { href }')'''
