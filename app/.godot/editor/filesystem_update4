@@ -1,2 +1,3 @@
 res://scenes/user-dashboard.scn
 res://assets/shaders/slice_viewer.gdshader
+res://scenes/mri_scroll.tscn
