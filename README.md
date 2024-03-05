@@ -97,7 +97,7 @@ The proposed work directly addresses this challenge by offering a tool that serv
 12. Huang, C., Leng, D., Li, L., Zheng, P., Sun, B., & Zhang, X. D. (2018). Transcriptome analysis of human peripheral blood reveals key circRNAs implicated in Allergic bronchopulmonary aspergillosis.
 13. Firdaus Abdullah, M., Noraini Sulaiman, S., Khusairi Osman, M., Karim, N. K. A., Lutfi Shuaib, I., & Danial Irfan Alhamdu, M. (2020). Classification of Lung Cancer Stages from CT Scan Images Using Image Processing and k-Nearest Neighbours.
 14. Riemann, D., Cwikowski, M., Turzer, S., Giese, T., Grallert, M., Schütte, W., & Seliger, B. (2018). Blood immune cell biomarkers in lung cancer.
-15. Girard, N., Lou, E., Azzoli, C. G., Reddy, R., Robson, M., Harlan, M., … Pao, W. (2010). Analysis of Genetic Variants in Never-Smokers with Lung Cancer Facilitated by an Internet-Based Blood Collection Protocol: A Preliminary Report.
+15. Girard, N., Lou, E., Azzoli, C. G., Reddy, R., Robson, M., Harlan, M., … Pao, W. (2010). Analysis of Genetic Variants in Never-Smokers with Lung Cancer Facilitated by an Internet-Based Blood Collection Protocol: A Preliminary Report.Uu
 
 ---
 
