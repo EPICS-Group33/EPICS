@@ -1,3 +1,5 @@
+Panel
+GridContainer
 Button
 MarginContainer
 Sprite2D
@@ -6,9 +8,7 @@ AnimatedSprite2D
 TextureButton
 VBoxContainer
 ColorRect
-Panel
 HBoxContainer
 FileDialog
 LineEdit
 VFlowContainer
-Control
