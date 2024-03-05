@@ -87,12 +87,17 @@ The proposed work directly addresses this challenge by offering a tool that serv
 2. Mitesh, A., & Singh, S. K. (2019). Mobile health apps for early detection and prevention of non-communicable diseases: A narrative review. Journal of Clinical and Diagnostic Research, 13(11), FE01-FE05.
 3. Ventola, C. L. (2014). Mobile apps for the healthcare professional: Benefits, risks, and a framework for evaluation. Pharmacy and Therapeutics, 39(4), 280-287.
 4. Daniel Johnson, Sebastian Deterding, Kerri-Ann Kuhn, Aleksandra Staneva, Stoyan Stoyanov, Leanne Hides, Gamification for health and wellbeing: A systematic review of the literature, Internet Interventions, ISSN 2214-7829
-5.Pereira, P., Duarte, E., Rebelo, F., Noriega, P. (2014). A Review of Gamification for Health-Related Contexts. In: Marcus, A. (eds) Design, User Experience, and Usability. User Experience Design for Diverse Interaction Platforms and Environments. DUXU 2014.
-6.King D, Greaves F, Exeter C, Darzi A. ‘Gamification’: Influencing health behaviours with games. Journal of the Royal Society of Medicine. 2013;106(3):76-78
-7.van Gaalen, A.E.J., Brouwer, J., Schönrock-Adema, J. et al. Gamification of health professions education: a systematic review. Adv in Health Sci Educ 26, 683–711 (2021).
-8.Sean A. Munson, Erika Poole, Daniel B. Perry, Tamara Peyton, 2015. "Gamification and Health", The Gameful World: Approaches, Issues, Applications, Steffen P. Walz, Sebastian Deterding
-9.Muangsrinoon, S.; Boonbrahm, P. Game elements from literature review of gamification in healthcare context. "JOTSE: Journal of Technology and Science Education", Febrer 2019, vol. 9, núm. 1, p. 20-31. 
-10.Lamyae Sardi, Ali Idri, José Luis Fernández-Alemán, A systematic review of gamification in e-Health,Journal of Biomedical Informatics,Volume 71,2017,Pages 31-48,ISSN 1532-0464.
+5. Pereira, P., Duarte, E., Rebelo, F., Noriega, P. (2014). A Review of Gamification for Health-Related Contexts. In: Marcus, A. (eds) Design, User Experience, and Usability. User Experience Design for Diverse Interaction Platforms and Environments. DUXU 2014.
+6. King D, Greaves F, Exeter C, Darzi A. ‘Gamification’: Influencing health behaviours with games. Journal of the Royal Society of Medicine. 2013;106(3):76-78
+7. van Gaalen, A.E.J., Brouwer, J., Schönrock-Adema, J. et al. Gamification of health professions education: a systematic review. Adv in Health Sci Educ 26, 683–711 (2021).
+8. Sean A. Munson, Erika Poole, Daniel B. Perry, Tamara Peyton, 2015. "Gamification and Health", The Gameful World: Approaches, Issues, Applications, Steffen P. Walz, Sebastian Deterding
+9. Muangsrinoon, S.; Boonbrahm, P. Game elements from literature review of gamification in healthcare context. "JOTSE: Journal of Technology and Science Education", Febrer 2019, vol. 9, núm. 1, p. 20-31. 
+10. Lamyae Sardi, Ali Idri, José Luis Fernández-Alemán, A systematic review of gamification in e-Health,Journal of Biomedical Informatics,Volume 71,2017,Pages 31-48,ISSN 1532-0464.
+11. Tracy MC, Okorie CUA, Foley EA, Moss RB: Allergic Bronchopulmonary Aspergillosis. Journal of fungi 2016, 2(2).
+12. Huang, C., Leng, D., Li, L., Zheng, P., Sun, B., & Zhang, X. D. (2018). Transcriptome analysis of human peripheral blood reveals key circRNAs implicated in Allergic bronchopulmonary aspergillosis.
+13. Firdaus Abdullah, M., Noraini Sulaiman, S., Khusairi Osman, M., Karim, N. K. A., Lutfi Shuaib, I., & Danial Irfan Alhamdu, M. (2020). Classification of Lung Cancer Stages from CT Scan Images Using Image Processing and k-Nearest Neighbours.
+14. Riemann, D., Cwikowski, M., Turzer, S., Giese, T., Grallert, M., Schütte, W., & Seliger, B. (2018). Blood immune cell biomarkers in lung cancer.
+15. Girard, N., Lou, E., Azzoli, C. G., Reddy, R., Robson, M., Harlan, M., … Pao, W. (2010). Analysis of Genetic Variants in Never-Smokers with Lung Cancer Facilitated by an Internet-Based Blood Collection Protocol: A Preliminary Report.
 
 ---
 
