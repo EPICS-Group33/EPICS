@@ -1,0 +1,7 @@
+Title
+short discription (summary)
+symtoms (list)
+causes if any
+diagnosis ( just the way to find the disease)
+Treating 
+prevention
