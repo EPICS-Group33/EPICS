@@ -98,6 +98,21 @@ The proposed work directly addresses this challenge by offering a tool that serv
 13. Firdaus Abdullah, M., Noraini Sulaiman, S., Khusairi Osman, M., Karim, N. K. A., Lutfi Shuaib, I., & Danial Irfan Alhamdu, M. (2020). Classification of Lung Cancer Stages from CT Scan Images Using Image Processing and k-Nearest Neighbours.
 14. Riemann, D., Cwikowski, M., Turzer, S., Giese, T., Grallert, M., Schütte, W., & Seliger, B. (2018). Blood immune cell biomarkers in lung cancer.
 15. Girard, N., Lou, E., Azzoli, C. G., Reddy, R., Robson, M., Harlan, M., … Pao, W. (2010). Analysis of Genetic Variants in Never-Smokers with Lung Cancer Facilitated by an Internet-Based Blood Collection Protocol: A Preliminary Report.Uu
+16. Liu, B., Li, Y., Ghosh, S., Sun, Z., Ng, K., & Hu, J. (2019). Complication Risk Profiling in Diabetes Care: A Bayesian Multi-Task and Feature Relationship Learning Approach.
+17. Shi, X., Hu, Y., Zhang, Y., Li, W., Hao, Y., Alelaiwi, A., … Shamim Hossain, M. (2016). Multiple Disease Risk Assessment With Uniform Model Based on Medical Clinical Notes.
+18. N. Y. Philip, M. Razaak, J. Chang, S. M, M. O’Kane and B. K. Pierscionek, "A Data Analytics Suite for Exploratory Predictive, and Visual Analysis of Type 2 Diabetes"
+19. Grover, A., Kalani, A., & Dubey, S. K. (2020). Analytical Approach towards Prediction of Diseases Using Machine Learning Algorithms.
+20. Rahman, T. M., Siddiqua, S., Rabby, S. E., Hasan, N., & Imam, M. H. (2019). Early Detection of Kidney Disease Using ECG Signals Through Machine Learning Based Modelling.
+21. Shailaja, K., Seetharamulu, B., & Jabbar, M. A. (2018). Machine Learning in Healthcare: A Review.
+22. Boonchieng, E., & Duangchaemkarn, K. (2016). Digital disease detection: Application of machine learning in community health informatics.
+23. Roy, A. P., Chatterjee, S., Maji, P., & Mondal, H. K. (2020). Classification of ECG Signals for IoT-based Smart Healthcare Applications using WBAN.
+24. Kaul, C., Kaul, A., & Verma, S. (2015). Comparitive study on healthcare prediction systems using big data.
+25. Flynn, J. T., Mitsnefes, M., Pierce, C., Cole, S. R., Parekh, R. S., … Furth, S. L. (2008). Blood Pressure in Children With Chronic Kidney Disease: A Report From the Chronic Kidney Disease in Children Study.
+26. Malik, S., Kanwal, N., Asghar, M. N., Sadiq, M. A. A., Karamat, I., & Fleury, M. (2019). Data Driven Approach for Eye Disease Classification with Machine Learning. 
+27. Weiss, N., Miller, F., Cazaubon, S., & Couraud, P.-O. (2009). The blood-brain barrier in brain homeostasis and neurological diseases.
+28. Park, D. J., Park, M. W., Lee, H., Kim, Y.-J., Kim, Y., & Park, Y. H. (2021). Development of machine learning model for diagnostic disease prediction based on laboratory tests.
+29. Hiroki Kaneko, Hironobu Umakoshi, Masatoshi Ogata,  Norio Wada (2021): Machine learning based models for prediction of subtype diagnosis of primary aldosteronism using blood test
+30. Stevens, T., Rosenberg, R., Aird, W., Quertermous, T., Johnson, F. L., Garcia, J. G. N., … Garfinkel, S. (2001). NHLBI workshop report: endothelial cell phenotypes in heart, lung, and blood diseases.
 
 ---
 
