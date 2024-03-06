@@ -1,5 +1,4 @@
 res://scenes/user-dashboard.scn
 res://assets/shaders/slice_viewer.gdshader
-res://assets/materials/slice_viewer.material
-res://scenes/slice_viewer.scn
-res://assets/Scripts/mri_scroll.tscn
+res://scenes/mri_scroll.tscn
+res://assets/scripts/MRI_Scroll.gd
