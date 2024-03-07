@@ -526,3 +526,24 @@
   justify-content: center;
   margin-top: 2rem;
 }
+
+.about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1100px) {
+  .about-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .about-team-grid {
+    grid-template-columns: 1fr;
+  }
+}
