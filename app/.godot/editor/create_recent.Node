@@ -1,14 +1,14 @@
+Control
+Panel
 Label
+GridContainer
 LineEdit
 HBoxContainer
 VBoxContainer
-Panel
-GridContainer
 TextureProgressBar
 MarginContainer
 Button
 TextureRect
 ScrollContainer
 PanelContainer
-Control
 Sprite2D
