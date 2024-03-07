@@ -1,3 +1,4 @@
 app/.godot/
-
-app/export/
+app/export/web/
+app/export/android/
+app/export/pc/
