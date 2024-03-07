@@ -1,2 +1,2 @@
-res://scenes/main.scn
+res://components/navbar/navbar.gd
 res://assets/shaders/slice_viewer.gdshader
