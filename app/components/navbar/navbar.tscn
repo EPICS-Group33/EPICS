@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://1qlv7dtyeuhf"]
+[gd_scene load_steps=12 format=3 uid="uid://1qlv7dtyeuhf"]
 
 [ext_resource type="Theme" uid="uid://dskbyw3vkfqbn" path="res://assets/theme/default_theme.theme" id="1_juln4"]
+[ext_resource type="Script" path="res://components/navbar/navbar.gd" id="1_k36e6"]
 [ext_resource type="Texture2D" uid="uid://3xtjdojj202p" path="res://assets/textures/icons/dashboard-icon.png" id="2_7pfgk"]
 [ext_resource type="Texture2D" uid="uid://bvi28bmmdcj1u" path="res://assets/textures/icons/health-icon.png" id="3_ug8sy"]
 [ext_resource type="Texture2D" uid="uid://3bm8b1lntmwm" path="res://assets/textures/icons/diagnosis-icon.png" id="4_6d5f7"]
@@ -17,7 +18,11 @@ corner_radius_bottom_right = 10
 
 [node name="Navbar" type="Panel"]
 custom_minimum_size = Vector2(100, 0)
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_4lw60")
+script = ExtResource("1_k36e6")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -46,12 +51,20 @@ layout_mode = 2
 texture_normal = ExtResource("2_7pfgk")
 stretch_mode = 3
 
+[node name="Dashboard Button2" type="Button" parent="MarginContainer/VBoxContainer/Top Elements"]
+layout_mode = 2
+text = "Dashboard"
+
 [node name="Health Button2" type="TextureButton" parent="MarginContainer/VBoxContainer/Top Elements"]
 visible = false
 custom_minimum_size = Vector2(45, 45)
 layout_mode = 2
 texture_normal = ExtResource("3_ug8sy")
 stretch_mode = 3
+
+[node name="Health Button" type="Button" parent="MarginContainer/VBoxContainer/Top Elements"]
+layout_mode = 2
+text = "Health"
 
 [node name="Diagnosis Button" type="TextureButton" parent="MarginContainer/VBoxContainer/Top Elements"]
 visible = false
@@ -60,12 +73,20 @@ layout_mode = 2
 texture_normal = ExtResource("4_6d5f7")
 stretch_mode = 3
 
+[node name="Diagnosis Button2" type="Button" parent="MarginContainer/VBoxContainer/Top Elements"]
+layout_mode = 2
+text = "Diagnosis"
+
 [node name="History Button" type="TextureButton" parent="MarginContainer/VBoxContainer/Top Elements"]
 visible = false
 custom_minimum_size = Vector2(45, 45)
 layout_mode = 2
 texture_normal = ExtResource("5_c7dhs")
 stretch_mode = 3
+
+[node name="History Button2" type="Button" parent="MarginContainer/VBoxContainer/Top Elements"]
+layout_mode = 2
+text = "History"
 
 [node name="Info Button" type="TextureButton" parent="MarginContainer/VBoxContainer/Top Elements"]
 visible = false
@@ -74,6 +95,10 @@ layout_mode = 2
 texture_normal = ExtResource("6_uqvuq")
 stretch_mode = 3
 
+[node name="Info Button2" type="Button" parent="MarginContainer/VBoxContainer/Top Elements"]
+layout_mode = 2
+text = "Info"
+
 [node name="Articles Button" type="TextureButton" parent="MarginContainer/VBoxContainer/Top Elements"]
 visible = false
 custom_minimum_size = Vector2(45, 45)
@@ -81,43 +106,42 @@ layout_mode = 2
 texture_normal = ExtResource("7_pqdnm")
 stretch_mode = 3
 
-[node name="Dashboard Button2" type="Button" parent="MarginContainer/VBoxContainer/Top Elements"]
-layout_mode = 2
-text = "Dashboard"
-
-[node name="Health Button" type="Button" parent="MarginContainer/VBoxContainer/Top Elements"]
-layout_mode = 2
-text = "Health"
-
-[node name="Diagnosis Button2" type="Button" parent="MarginContainer/VBoxContainer/Top Elements"]
-layout_mode = 2
-text = "Diagnosis"
-
-[node name="History Button2" type="Button" parent="MarginContainer/VBoxContainer/Top Elements"]
-layout_mode = 2
-text = "History"
-
-[node name="Info Button2" type="Button" parent="MarginContainer/VBoxContainer/Top Elements"]
-layout_mode = 2
-text = "Info"
-
 [node name="Articles Button2" type="Button" parent="MarginContainer/VBoxContainer/Top Elements"]
 layout_mode = 2
 text = "Articles"
 
-[node name="Bottom Elements2" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+[node name="Bottom Elements" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("1_juln4")
 alignment = 2
 
-[node name="User Profile Button" type="TextureButton" parent="MarginContainer/VBoxContainer/Bottom Elements2"]
+[node name="User Profile Button" type="TextureButton" parent="MarginContainer/VBoxContainer/Bottom Elements"]
+visible = false
 custom_minimum_size = Vector2(45, 45)
 layout_mode = 2
 texture_normal = ExtResource("8_n2cr3")
 stretch_mode = 3
 
-[node name="SettingButton" type="TextureButton" parent="MarginContainer/VBoxContainer/Bottom Elements2"]
+[node name="User Profile Button2" type="Button" parent="MarginContainer/VBoxContainer/Bottom Elements"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+text = "User"
+
+[node name="SettingButton" type="TextureButton" parent="MarginContainer/VBoxContainer/Bottom Elements"]
+visible = false
 custom_minimum_size = Vector2(45, 45)
 layout_mode = 2
 texture_normal = ExtResource("9_kb7rq")
 stretch_mode = 3
+
+[node name="SettingButton Button2" type="Button" parent="MarginContainer/VBoxContainer/Bottom Elements"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+text = "Settings"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Top Elements/Dashboard Button2" to="." method="_on_dashboard_button_2_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Top Elements/Health Button" to="." method="_on_health_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Top Elements/Diagnosis Button2" to="." method="_on_diagnosis_button_2_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Top Elements/History Button2" to="." method="_on_history_button_2_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Top Elements/Info Button2" to="." method="_on_info_button_2_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Top Elements/Articles Button2" to="." method="_on_articles_button_2_pressed"]
