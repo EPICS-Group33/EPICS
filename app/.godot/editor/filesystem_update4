@@ -1,2 +1,3 @@
-res://components/navbar/navbar.gd
+res://scenes/user_auth_menu.tscn
 res://assets/shaders/slice_viewer.gdshader
+res://assets/scripts/user_auth.gd
