@@ -11,39 +11,47 @@
     <title>RiskPro</title>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#">RISKPRO</a>
-
-        <ul>
-            <li id="nav-logo">
-                <a href="#">RISKPRO</a>
-            </li>
-            <li>
-                <a href="./pages/about.html">About</a>
-            </li>
-        </ul>
-    </nav>
-
-    <nav class="quicknav">
-        
-    </nav>
-
     <header>
-        <h1>RiskPro</h1>
-        <p>A tool for patient risk profiling and care management</p>
+        <a class="logo" href="#">RISKPRO</a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <a href="./pages/login.html"><button>Login</button></a>
+            <a href="./pages/signup.html"><button>Signup</button></a>
+        </nav>
     </header>
     
     <main>
         <section id="section-hero">
-            <a href="./pages/signup.html">Get Started</a>
-            <a href="./pages/about.html">Learn More&nbsp;&rarr;</a>
+            <h1>RISKPRO</h1>
+            <p>A tool for patient risk profiling and care management</p>
+            <a href="./pages/signup.html"><button>Get Started</button></a>
+            <a href="./pages/about.html"><button>Learn More&nbsp;&rarr;</button></a>
         </section>
+
+        <div class="separator"></div>
 
         <section id="section-realtimeinfo">
-            <div class="infocard" id="div-outbreakinfo"></div>
+            <div class="infocard" id="div-travelinfo">
+                <h4>Planning a trip?</h4>
+                <p>Take a moment to check out the latest travel information</p>
+                <a href="./pages/travelinfo.html">More Info&nbsp;&rarr;</a>
+            </div>
 
-            <div class="infocard" id="div-travelinfo"></div>
+            <div class="infocard" id="div-outbreakinfo">
+                <h4>Worried about the flu?</h4>
+                <p>Check out the latest outbreaks information</p>
+                <a href="./pages/outbreaks.html">More Info&nbsp;&rarr;</a>
+            </div>
         </section>
+
+        <div class="separator"></div>
 
         <section id="section-about">
             <article id="article-about">
@@ -56,6 +64,8 @@
                 </p>
             </article>
         </section>
+
+        <div class="separator"></div>
 
         <section id="section-features">
             <aside>
@@ -74,6 +84,8 @@
                 <div class="card"></div>
             </div>
         </section>
+
+        <div class="separator"></div>
 
         <section id="section-faq">
             <div>
@@ -97,6 +109,7 @@
                 <div class="separator"></div>
                 <h3>Can patient risk profiling be used for preventive healthcare?</h3>
                 <p>Yes, patient risk profiling is often used in preventive healthcare to identify individuals at higher risk for certain conditions and provide proactive measures to reduce those risks. By addressing potential health issues early, preventive strategies can lead to better health outcomes.</p>
+                <div class="separator"></div>
             </div>
 
         </section>
