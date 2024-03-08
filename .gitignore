@@ -2,3 +2,5 @@ app/.godot/
 app/export/web/
 app/export/android/
 app/export/pc/
+
+test/.env
