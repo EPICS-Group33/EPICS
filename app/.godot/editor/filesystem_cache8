@@ -1,7 +1,53 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1709871470
+::res://::1709898095
 export_presets.cfg::TextFile::-1::1709823678::0::1::::<><>::
 icon.svg::CompressedTexture2D::1891912488320396702::1709480254::1709480261::1::::<><>::
+::res://addons/::1709898014
+::res://addons/godot-firebase/::1709898014
+icon.svg::CompressedTexture2D::1932520971276548949::1709898013::1709898014::1::::<><>::
+plugin.cfg::TextFile::-1::1709898013::0::1::::<><>::
+plugin.gd::GDScript::-1::1709898014::0::1::::<>EditorPlugin<>::
+README.md::TextFile::-1::1709898013::0::1::::<><>::
+Utilies.gd::GDScript::-1::1709898013::0::1::::Utilities<>Node<>::
+::res://addons/godot-firebase/auth/::1709898013
+auth.gd::GDScript::-1::1709898013::0::1::::FirebaseAuth<>HTTPRequest<>::
+auth_provider.gd::GDScript::-1::1709898013::0::1::::AuthProvider<>RefCounted<>::
+user_data.gd::GDScript::-1::1709898013::0::1::::FirebaseUserData<>RefCounted<>::
+::res://addons/godot-firebase/auth/providers/::1709898013
+facebook.gd::GDScript::-1::1709898013::0::1::::FacebookProvider<>AuthProvider<>::
+github.gd::GDScript::-1::1709898013::0::1::::GitHubProvider<>AuthProvider<>::
+google.gd::GDScript::-1::1709898013::0::1::::GoogleProvider<>AuthProvider<>::
+twitter.gd::GDScript::-1::1709898013::0::1::::TwitterProvider<>AuthProvider<>::
+::res://addons/godot-firebase/database/::1709898013
+database.gd::GDScript::-1::1709898013::0::1::::FirebaseDatabase<>Node<>::
+database_store.gd::GDScript::-1::1709898013::0::1::::FirebaseDatabaseStore<>Node<>::
+reference.gd::GDScript::-1::1709898013::0::1::::FirebaseDatabaseReference<>Node<>::
+resource.gd::GDScript::-1::1709898013::0::1::::FirebaseResource<>Resource<>::
+::res://addons/godot-firebase/dynamiclinks/::1709898013
+dynamiclinks.gd::GDScript::-1::1709898013::0::1::::FirebaseDynamicLinks<>Node<>::
+::res://addons/godot-firebase/firebase/::1709898013
+firebase.gd::GDScript::-1::1709898013::0::1::::<>Node<>::
+firebase.tscn::PackedScene::6250566209717982510::1709898013::0::1::::<><>::res://addons/godot-firebase/database/database.gd<>res://addons/godot-firebase/firestore/firestore.gd<>res://addons/godot-firebase/firebase/firebase.gd<>res://addons/godot-firebase/auth/auth.gd<>res://addons/godot-firebase/storage/storage.gd<>res://addons/godot-firebase/dynamiclinks/dynamiclinks.gd<>res://addons/godot-firebase/functions/functions.gd
+::res://addons/godot-firebase/firestore/::1709898013
+firestore.gd::GDScript::-1::1709898013::0::1::::FirebaseFirestore<>Node<>::
+firestore_collection.gd::GDScript::-1::1709898013::0::1::::FirestoreCollection<>RefCounted<>::
+firestore_document.gd::GDScript::-1::1709898013::0::1::::FirestoreDocument<>RefCounted<>::
+firestore_query.gd::GDScript::-1::1709898013::0::1::::FirestoreQuery<>RefCounted<>::
+firestore_task.gd::GDScript::-1::1709898013::0::1::::FirestoreTask<>RefCounted<>::
+::res://addons/godot-firebase/functions/::1709898013
+functions.gd::GDScript::-1::1709898013::0::1::::FirebaseFunctions<>Node<>::
+function_task.gd::GDScript::-1::1709898013::0::1::::FunctionTask<>RefCounted<>::
+::res://addons/godot-firebase/storage/::1709898014
+storage.gd::GDScript::-1::1709898014::0::1::::FirebaseStorage<>Node<>::
+storage_reference.gd::GDScript::-1::1709898014::0::1::::StorageReference<>RefCounted<>::
+storage_task.gd::GDScript::-1::1709898014::0::1::::StorageTask<>RefCounted<>::
+::res://addons/http-sse-client/::1709898014
+HTTPSSEClient.gd::GDScript::-1::1709898014::0::1::::<>Node<>::
+HTTPSSEClient.tscn::PackedScene::-1::1709898014::0::1::::<><>::res://addons/http-sse-client/HTTPSSEClient.gd
+httpsseclient_plugin.gd::GDScript::-1::1709898014::0::1::::<>EditorPlugin<>::
+icon.png::CompressedTexture2D::8200441166331969261::1709898014::1709898014::1::::<><>::
+plugin.cfg::TextFile::-1::1709898014::0::1::::<><>::
+README.md::TextFile::-1::1709898014::0::1::::<><>::
 ::res://assets/::1709823149
 ::res://assets/autoloads/::1709823191
 ::res://assets/autoloads/app_manager/::1709823336
@@ -13,13 +59,13 @@ icon.svg::CompressedTexture2D::1891912488320396702::1709480254::1709480261::1:::
 ::res://assets/components/navbar/::1709823336
 ::res://assets/components/risk_profile/::1709823336
 ::res://assets/import/::1709873631
-::res://assets/import/kenney_fantasy-ui-borders/::1709873628
+::res://assets/import/kenney_fantasy-ui-borders/::1709873873
 License.txt::TextFile::-1::1709873628::0::1::::<><>::
 Preview.png::CompressedTexture2D::1785928464021352584::1709873628::1709873873::1::::<><>::
 Sample.png::CompressedTexture2D::798158480728076146::1709873628::1709873873::1::::<><>::
 ::res://assets/import/kenney_fantasy-ui-borders/PNG/::1709873624
 ::res://assets/import/kenney_fantasy-ui-borders/PNG/Default/::1709873623
-::res://assets/import/kenney_fantasy-ui-borders/PNG/Default/Border/::1709873621
+::res://assets/import/kenney_fantasy-ui-borders/PNG/Default/Border/::1709873874
 panel-border-000.png::CompressedTexture2D::4503357103640594343::1709873621::1709873873::1::::<><>::
 panel-border-001.png::CompressedTexture2D::4938585402798939084::1709873621::1709873873::1::::<><>::
 panel-border-002.png::CompressedTexture2D::1022504455075494292::1709873621::1709873873::1::::<><>::
@@ -52,21 +98,21 @@ panel-border-028.png::CompressedTexture2D::5845313499835992664::1709873621::1709
 panel-border-029.png::CompressedTexture2D::5466261171395991468::1709873621::1709873874::1::::<><>::
 panel-border-030.png::CompressedTexture2D::8344015823782593090::1709873621::1709873874::1::::<><>::
 panel-border-031.png::CompressedTexture2D::5449292438974570338::1709873621::1709873874::1::::<><>::
-::res://assets/import/kenney_fantasy-ui-borders/PNG/Default/Divider/::1709873622
+::res://assets/import/kenney_fantasy-ui-borders/PNG/Default/Divider/::1709873874
 divider-000.png::CompressedTexture2D::6544364283291315346::1709873621::1709873874::1::::<><>::
 divider-001.png::CompressedTexture2D::3504682528202342635::1709873621::1709873873::1::::<><>::
 divider-002.png::CompressedTexture2D::158109504256582926::1709873621::1709873873::1::::<><>::
 divider-003.png::CompressedTexture2D::2261634028613551386::1709873621::1709873873::1::::<><>::
 divider-004.png::CompressedTexture2D::7689231171995191278::1709873622::1709873873::1::::<><>::
 divider-005.png::CompressedTexture2D::168508727104990607::1709873622::1709873873::1::::<><>::
-::res://assets/import/kenney_fantasy-ui-borders/PNG/Default/Divider Fade/::1709873622
+::res://assets/import/kenney_fantasy-ui-borders/PNG/Default/Divider Fade/::1709873873
 divider-fade-000.png::CompressedTexture2D::3837542123430442904::1709873622::1709873873::1::::<><>::
 divider-fade-001.png::CompressedTexture2D::8059386277837540951::1709873622::1709873873::1::::<><>::
 divider-fade-002.png::CompressedTexture2D::1936546283802681632::1709873622::1709873873::1::::<><>::
 divider-fade-003.png::CompressedTexture2D::8143635130183791111::1709873622::1709873873::1::::<><>::
 divider-fade-004.png::CompressedTexture2D::2522581161073040126::1709873622::1709873873::1::::<><>::
 divider-fade-005.png::CompressedTexture2D::7820656697118560903::1709873622::1709873873::1::::<><>::
-::res://assets/import/kenney_fantasy-ui-borders/PNG/Default/Panel/::1709873622
+::res://assets/import/kenney_fantasy-ui-borders/PNG/Default/Panel/::1709873874
 panel-000.png::CompressedTexture2D::7631945129031079458::1709873622::1709873873::1::::<><>::
 panel-001.png::CompressedTexture2D::6654250197058834870::1709873622::1709873873::1::::<><>::
 panel-002.png::CompressedTexture2D::186776713078841611::1709873622::1709873873::1::::<><>::
@@ -99,7 +145,7 @@ panel-028.png::CompressedTexture2D::2262101582991657622::1709873622::1709873874:
 panel-029.png::CompressedTexture2D::1243888358125634790::1709873622::1709873874::1::::<><>::
 panel-030.png::CompressedTexture2D::4962525170716826666::1709873622::1709873874::1::::<><>::
 panel-031.png::CompressedTexture2D::491835113847888854::1709873622::1709873874::1::::<><>::
-::res://assets/import/kenney_fantasy-ui-borders/PNG/Default/Transparent border/::1709873623
+::res://assets/import/kenney_fantasy-ui-borders/PNG/Default/Transparent border/::1709873874
 panel-transparent-border-000.png::CompressedTexture2D::3218067216062775189::1709873623::1709873874::1::::<><>::
 panel-transparent-border-001.png::CompressedTexture2D::4942236239039914750::1709873623::1709873874::1::::<><>::
 panel-transparent-border-002.png::CompressedTexture2D::3936328817604298788::1709873623::1709873874::1::::<><>::
@@ -132,7 +178,7 @@ panel-transparent-border-028.png::CompressedTexture2D::8411539232975227852::1709
 panel-transparent-border-029.png::CompressedTexture2D::5135745285031597920::1709873623::1709873874::1::::<><>::
 panel-transparent-border-030.png::CompressedTexture2D::7040276540000234284::1709873623::1709873874::1::::<><>::
 panel-transparent-border-031.png::CompressedTexture2D::9098196569611845398::1709873623::1709873874::1::::<><>::
-::res://assets/import/kenney_fantasy-ui-borders/PNG/Default/Transparent center/::1709873624
+::res://assets/import/kenney_fantasy-ui-borders/PNG/Default/Transparent center/::1709873874
 panel-transparent-center-000.png::CompressedTexture2D::2025578595182752768::1709873623::1709873874::1::::<><>::
 panel-transparent-center-001.png::CompressedTexture2D::8797592838571672923::1709873623::1709873874::1::::<><>::
 panel-transparent-center-002.png::CompressedTexture2D::8920603793626840673::1709873623::1709873874::1::::<><>::
@@ -166,7 +212,7 @@ panel-transparent-center-029.png::CompressedTexture2D::6146968980781813846::1709
 panel-transparent-center-030.png::CompressedTexture2D::1876173351368265831::1709873624::1709873874::1::::<><>::
 panel-transparent-center-031.png::CompressedTexture2D::7183453547639948302::1709873624::1709873874::1::::<><>::
 ::res://assets/import/kenney_fantasy-ui-borders/PNG/Double/::1709873627
-::res://assets/import/kenney_fantasy-ui-borders/PNG/Double/Border/::1709873625
+::res://assets/import/kenney_fantasy-ui-borders/PNG/Double/Border/::1709873874
 panel-border-000.png::CompressedTexture2D::2168342397359825156::1709873624::1709873874::1::::<><>::
 panel-border-001.png::CompressedTexture2D::7784941601635781453::1709873624::1709873874::1::::<><>::
 panel-border-002.png::CompressedTexture2D::2776313715672459612::1709873624::1709873873::1::::<><>::
@@ -199,21 +245,21 @@ panel-border-028.png::CompressedTexture2D::9170233089849064325::1709873625::1709
 panel-border-029.png::CompressedTexture2D::2187711982248779266::1709873625::1709873873::1::::<><>::
 panel-border-030.png::CompressedTexture2D::5075954139394713495::1709873625::1709873873::1::::<><>::
 panel-border-031.png::CompressedTexture2D::1004927361576679984::1709873625::1709873873::1::::<><>::
-::res://assets/import/kenney_fantasy-ui-borders/PNG/Double/Divider/::1709873625
+::res://assets/import/kenney_fantasy-ui-borders/PNG/Double/Divider/::1709873873
 divider-000.png::CompressedTexture2D::7455000861237393958::1709873625::1709873873::1::::<><>::
 divider-001.png::CompressedTexture2D::3897270547841297373::1709873625::1709873873::1::::<><>::
 divider-002.png::CompressedTexture2D::8401034606099884712::1709873625::1709873873::1::::<><>::
 divider-003.png::CompressedTexture2D::3331049764136013131::1709873625::1709873873::1::::<><>::
 divider-004.png::CompressedTexture2D::2472416213083240415::1709873625::1709873873::1::::<><>::
 divider-005.png::CompressedTexture2D::8573035063378794172::1709873625::1709873873::1::::<><>::
-::res://assets/import/kenney_fantasy-ui-borders/PNG/Double/Divider Fade/::1709873625
+::res://assets/import/kenney_fantasy-ui-borders/PNG/Double/Divider Fade/::1709873873
 divider-fade-000.png::CompressedTexture2D::8293367275754616325::1709873625::1709873873::1::::<><>::
 divider-fade-001.png::CompressedTexture2D::3775619635179136914::1709873625::1709873873::1::::<><>::
 divider-fade-002.png::CompressedTexture2D::1926475544912492040::1709873625::1709873873::1::::<><>::
 divider-fade-003.png::CompressedTexture2D::8799692093147485398::1709873625::1709873873::1::::<><>::
 divider-fade-004.png::CompressedTexture2D::2555677035569055959::1709873625::1709873873::1::::<><>::
 divider-fade-005.png::CompressedTexture2D::3051082360726779115::1709873625::1709873873::1::::<><>::
-::res://assets/import/kenney_fantasy-ui-borders/PNG/Double/Panel/::1709873626
+::res://assets/import/kenney_fantasy-ui-borders/PNG/Double/Panel/::1709873873
 panel-000.png::CompressedTexture2D::8142887195487363246::1709873625::1709873873::1::::<><>::
 panel-001.png::CompressedTexture2D::5448989464210811814::1709873625::1709873873::1::::<><>::
 panel-002.png::CompressedTexture2D::1788779748895804172::1709873625::1709873873::1::::<><>::
@@ -246,7 +292,7 @@ panel-028.png::CompressedTexture2D::3464553051619525391::1709873626::1709873873:
 panel-029.png::CompressedTexture2D::6687985790235442597::1709873626::1709873873::1::::<><>::
 panel-030.png::CompressedTexture2D::2137644087494139731::1709873626::1709873873::1::::<><>::
 panel-031.png::CompressedTexture2D::7894998229284503748::1709873626::1709873873::1::::<><>::
-::res://assets/import/kenney_fantasy-ui-borders/PNG/Double/Transparent border/::1709873627
+::res://assets/import/kenney_fantasy-ui-borders/PNG/Double/Transparent border/::1709873873
 panel-transparent-border-000.png::CompressedTexture2D::2710569027034237778::1709873626::1709873873::1::::<><>::
 panel-transparent-border-001.png::CompressedTexture2D::192068940166510660::1709873626::1709873873::1::::<><>::
 panel-transparent-border-002.png::CompressedTexture2D::8685575577566745197::1709873626::1709873873::1::::<><>::
@@ -279,7 +325,7 @@ panel-transparent-border-028.png::CompressedTexture2D::2888908212898241946::1709
 panel-transparent-border-029.png::CompressedTexture2D::1767001223261196675::1709873627::1709873873::1::::<><>::
 panel-transparent-border-030.png::CompressedTexture2D::6371051172893945960::1709873627::1709873873::1::::<><>::
 panel-transparent-border-031.png::CompressedTexture2D::2145354689221619923::1709873627::1709873873::1::::<><>::
-::res://assets/import/kenney_fantasy-ui-borders/PNG/Double/Transparent center/::1709873627
+::res://assets/import/kenney_fantasy-ui-borders/PNG/Double/Transparent center/::1709873873
 panel-transparent-center-000.png::CompressedTexture2D::5423292638565426301::1709873627::1709873873::1::::<><>::
 panel-transparent-center-001.png::CompressedTexture2D::9165278433928066782::1709873627::1709873873::1::::<><>::
 panel-transparent-center-002.png::CompressedTexture2D::1670593457098519748::1709873627::1709873873::1::::<><>::
@@ -312,16 +358,16 @@ panel-transparent-center-028.png::CompressedTexture2D::7430443768464783600::1709
 panel-transparent-center-029.png::CompressedTexture2D::2875847474079574461::1709873627::1709873873::1::::<><>::
 panel-transparent-center-030.png::CompressedTexture2D::7766152630381345250::1709873627::1709873873::1::::<><>::
 panel-transparent-center-031.png::CompressedTexture2D::8650699325285942812::1709873627::1709873873::1::::<><>::
-::res://assets/import/kenney_fantasy-ui-borders/Vector/::1709873627
+::res://assets/import/kenney_fantasy-ui-borders/Vector/::1709873873
 fantasy-ui-borders.svg::CompressedTexture2D::1340034392078489584::1709873627::1709873873::1::::<><>::
 ::res://assets/materials/::1709649947
 slice_viewer.material::ShaderMaterial::2548929248021095105::1709649947::0::1::::<><>::res://assets/shaders/slice_viewer.gdshader
 ::res://assets/scenes/::1709823336
-::res://assets/scripts/::1709828956
+::res://assets/scripts/::1709897659
 MRI_Scroll.gd::GDScript::-1::1709729066::0::1::::<>Sprite2D<>::
-user_auth.gd::GDScript::-1::1709828956::0::1::::<>Control<>::
-::res://assets/shaders/::1709873117
-slice_viewer.gdshader::Shader::-1::1709873873::0::1::::<><>::
+user_auth.gd::GDScript::-1::1709897659::0::1::::<>Control<>::
+::res://assets/shaders/::1709898115
+slice_viewer.gdshader::Shader::-1::1709898115::0::1::::<><>::
 ::res://assets/textures/::1709651102
 ::res://assets/textures/icons/::1709651102
 articles-icon.png::CompressedTexture2D::6935923558183472589::1709622014::1709622048::1::::<><>::
@@ -337,8 +383,8 @@ spritesheet.png::CompressedTexture2D::2254094238334021798::1709618349::170961896
 ::res://assets/theme/::1709567124
 default_theme.theme::Theme::8443409789886916951::1709567124::0::1::::<><>::
 ::res://assets/ui/::1709814922
-::res://autoloads/::1709823337
-app_manager.gd::GDScript::-1::1709823337::0::1::::<>Node<>::
+::res://autoloads/::1709898116
+app_manager.gd::GDScript::-1::1709898115::0::1::::<>Node<>::
 ui_manager.gd::GDScript::-1::1709823337::0::1::::<>Node<>::
 ::res://components/::1709823337
 ::res://components/graphs/::1709823337
@@ -349,6 +395,16 @@ navbar.tscn::PackedScene::1858647053523375875::1709823337::0::1::::<><>::uid://d
 ::res://components/risk_profile/::1709823337
 risk_profile.gd::GDScript::-1::1709823337::0::1::::<>Resource<>::
 ::res://exports/::1709824297
+::res://ios_plugins/::1709898014
+::res://ios_plugins/godot_svc/::1709898014
+::res://ios_plugins/godot_svc/bin 3.x/::1709898014
+::res://ios_plugins/godot_svc/bin 3.x/godot_svc.debug.xcframework/::1709898014
+::res://ios_plugins/godot_svc/bin 3.x/godot_svc.debug.xcframework/ios-arm64_armv7/::1709898014
+::res://ios_plugins/godot_svc/bin 3.x/godot_svc.debug.xcframework/ios-arm64_x86_64-simulator/::1709898014
+::res://ios_plugins/godot_svc/bin 3.x/godot_svc.release.xcframework/::1709898014
+::res://ios_plugins/godot_svc/bin 3.x/godot_svc.release.xcframework/ios-arm64_armv7/::1709898014
+::res://ios_plugins/godot_svc/bin 3.x/godot_svc.release.xcframework/ios-arm64_x86_64-simulator/::1709898014
+::res://ios_plugins/godot_svc/src/::1709898014
 ::res://python/::1709827647
 ::res://python/venv/::1709827647
 pyvenv.cfg::TextFile::-1::1709827647::0::1::::<><>::
@@ -424,10 +480,10 @@ top_level.txt::TextFile::-1::1709827649::0::1::::<><>::
 ::res://python/venv/Lib/site-packages/_distutils_hack/::1709827649
 ::res://python/venv/Lib/site-packages/_distutils_hack/__pycache__/::1709827649
 ::res://python/venv/Scripts/::1709827647
-::res://scenes/::1709873117
+::res://scenes/::1709897659
 main.scn::PackedScene::6731600155260600906::1709823337::0::1::::<><>::uid://1qlv7dtyeuhf::::res://components/navbar/navbar.tscn<>uid://dp7oxsphufmpr::::res://scenes/user-dashboard.scn
 main_menu.scn::PackedScene::2547400266675787236::1709823337::0::1::::<><>::
 mri_scroll.tscn::PackedScene::5673678472435156457::1709823337::0::1::::<><>::uid://7d5uq2ubi4ba::::res://assets/textures/MRI_Sprite/spritesheet.png<>res://assets/scripts/MRI_Scroll.gd
 user-dashboard.scn::PackedScene::8279046873875599303::1709823337::0::1::::<><>::uid://dskbyw3vkfqbn::::res://assets/theme/default_theme.theme<>uid://bn5kb1m44grrf::::res://assets/textures/icons/user-icon.png<>uid://but3wgggnf4t8::::res://assets/textures/icons/settings-icon.png
-user_auth_menu.tscn::PackedScene::2010969082173285049::1709873873::0::1::::<><>::res://assets/scripts/user_auth.gd
+user_auth_menu.tscn::PackedScene::2010969082173285049::1709897659::0::1::::<><>::res://assets/scripts/user_auth.gd
 visualizer_menu.tscn::PackedScene::8126876286988838939::1709823337::0::1::::<><>::uid://dskbyw3vkfqbn::::res://assets/theme/default_theme.theme

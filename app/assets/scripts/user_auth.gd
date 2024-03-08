@@ -5,7 +5,7 @@ const WEBID = "AIzaSyCHkXqf1bj29vjHZSvD0-7gl9msgEwAf64"
 const SIGNUP_ENDPOINT = "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=" + WEBID
 const LOGIN_ENDPOINT = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=" + WEBID
 
-const TEST_POINT = "https://testsystem-"
+const TEST_POINT = "https://riskpro-bd429-default-rtdb.asia-southeast1.firebasedatabase.app/"
 
 @onready var http = $HTTPRequest
 
@@ -46,3 +46,30 @@ func _signup():
 	http.request(TEST_POINT + username + ".json")
 
 	var result : Array = await http.request_completed as Array
+
+	if (result[1] != 200):
+		signup_warning.text = "An error has occured"
+		print(result[3].get_string_from_ascii())
+	else:
+		if (result[3].get_string_from_utf8() != "null"):
+			signup_warning.text = "Username already exists"
+			signup_username.self_modulate = Color.RED
+		else:
+			var body = {
+				"email": email,
+				"password": password
+			}
+			var headers = ['Content-type: application/json']
+			var json = JSON.new()
+			http.request(SIGNUP_ENDPOINT, headers, false, HTTPClient.METHOD_POST, json.stringify(body))
+			var signup_result = await http.request_completed as Array
+
+
+
+
+func _on_http_request_request_completed(result: int, response_code: int, headers: PackedStringArray, body: PackedByteArray) -> void:
+	var response = JSON.parse_string(body.get_string_from_utf8())
+	if (response_code == 200):
+		print(response)
+	else:
+		print(response.error)

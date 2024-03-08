@@ -1,2 +1,4 @@
-res://scenes/user_auth_menu.tscn
+res://autoloads/app_manager.gd
 res://assets/shaders/slice_viewer.gdshader
+res://components/user/user.gd
+res://components/risk_profile/risk_profile.gd
