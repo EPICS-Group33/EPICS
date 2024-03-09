@@ -29,7 +29,8 @@ def load_dataset(path, split=0.2):
     masks = sorted(glob.glob(os.path.join(path, "masks", "*.png")))
 
     # Determine the size of each dataset split
-    split_size = int(len(images) * split)
+    split_size = len(images) * split
+    print(split_size)
 
     # Splitting datasets
     train_x, valid_x = train_test_split(images, test_size=split_size, random_state=42)
