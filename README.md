@@ -136,7 +136,7 @@ The proposed work directly addresses this challenge by offering a tool that serv
 
 1. Ankit Sankar                 21BCG10075  
 2. Ashutosh Kumar Srivastava    21BAC10005  
-3. Chethan Khoche               21BCG10100  
+3. Chetan Khoche               21BCG10100  
 4. Devansh Trivedi              21BCE11407  
 5. GPV Mruthunjai               21BCE11559  
 6. Rishabh Pradhaan             21BCE11342  
