@@ -12,6 +12,10 @@
     font-family: "Monterrat", sans-serif;
 }
 
+body {
+    width: 100%;
+}
+
 li, a, button {
     font-family: "Monterrat", sans-serif;
     font-weight: 500;
@@ -21,13 +25,17 @@ li, a, button {
 }
 
 header {
+    height: 10vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
 }
 
-section:first-of-type {
+section {
+    width: 100%;
+    height: 100vh;
     color: #edf0f1;
     text-align: center;
     align-items: center;
@@ -37,6 +45,7 @@ section>h1 {
     font-size: 60px;
     font-weight: 900;
     margin-bottom: 10px;
+    justify-content: center;
 }
 
 section>p {
@@ -47,6 +56,19 @@ section>p {
 footer {
     height: 20vh;
     display: flex;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(52, 54, 54, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(52, 54, 54, 0.8);
 }
 
 .logo {
@@ -71,20 +93,108 @@ footer {
     color: gray;
 }
 
-button {
-    padding: 9px 25px;
-    background-color: rgba(52, 54, 54, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+.radiocards-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-button:hover {
-    background-color: rgba(52, 54, 54, 0.8);
+.radiocards-container {
+    height: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.radiocard-label {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s ease;
+    box-shadow: 0 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.radiocard {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;;
+    width: 80%;
+}
+
+.radiocard-desc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 40px 40px 40px 40px;
+    height: 20%;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: 0.3s, 0s;
+    transition: all .3s ease;
+}
+
+.radiocard-desc p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.radiocard-desc h4 {
+    text-transform: uppercase;
+}
+
+.radiocard-input {
+    display: none;
+}
+
+.radiocard-input:checked + label {
+    width: 600px
+}
+
+.radiocard-input:checked + label .radiocard-desc{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.radiocard-label[for="rc1"] {
+    background-image: url('./assets/card1.jpeg');
+}
+
+.radiocard-label[for="rc2"] {
+    background-image: url('./assets/card2.jpeg');
+}
+
+.radiocard-label[for="rc3"] {
+    background-image: url('./assets/card3.jpeg');
+}
+
+.radiocard-label[for="rc4"] {
+    background-image: url('./assets/card4.jpeg');
 }
 
 .separator {
     width: 100%;
     height: 30px;
+}
+
+#section-hero {
+    height: 90vh;
+    padding: 10%;
+    align-content: center;
+    justify-content: center;
+}
+
+#section-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

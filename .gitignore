@@ -4,3 +4,5 @@ app/export/android/
 app/export/pc/
 
 test/.env
+
+test/node_modules

@@ -1,4 +1,3 @@
-res://autoloads/app_manager.gd
+res://scenes/main.scn
 res://assets/shaders/slice_viewer.gdshader
-res://components/user/user.gd
-res://components/risk_profile/risk_profile.gd
+res://autoloads/app_manager.gd
