@@ -1,3 +1,2 @@
 res://scenes/main.scn
 res://assets/shaders/slice_viewer.gdshader
-res://autoloads/app_manager.gd
