@@ -11,19 +11,18 @@ config_version=5
 [application]
 
 config/name="vr deployment"
-run/main_scene="res://VR_test.tscn"
+run/main_scene="res://prefabs/scenes/VR_test.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [rendering]
 
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true
 
 [xr]
 
 openxr/enabled=true
+openxr/default_action_map="res://components/openxr_action_map.tres"
 openxr/foveation_level=3
 openxr/foveation_dynamic=true
 shaders/enabled=true
