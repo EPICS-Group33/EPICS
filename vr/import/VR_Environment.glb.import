@@ -1,0 +1,143 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cyfa4ywi41h3b"
+path="res://.godot/imported/VR_Environment.glb-4ca50091cd57232400f65274c40c26cf.scn"
+
+[deps]
+
+source_file="res://import/VR_Environment.glb"
+dest_files=["res://.godot/imported/VR_Environment.glb-4ca50091cd57232400f65274c40c26cf.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=false
+animation/import=false
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"materials": {
+"TEMP_MAT_Laboratory": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/materials/TEMP_MAT_Laboratory.res"
+}
+},
+"meshes": {
+"VR_Environment_Cabinet": {
+"generate/lightmap_uv": 0,
+"generate/lods": 2,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://assets/meshes/VR_Environment_Cabinet.res"
+},
+"VR_Environment_Cupboard": {
+"generate/lightmap_uv": 1,
+"generate/lods": 2,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://assets/meshes/VR_Environment_Cupboard.res"
+},
+"VR_Environment_Lamp": {
+"generate/lightmap_uv": 0,
+"generate/lods": 2,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://assets/meshes/VR_Environment_Lamp.res"
+},
+"VR_Environment_LoadingBar": {
+"generate/lightmap_uv": 1,
+"generate/lods": 2,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://assets/meshes/VR_Environment_LoadingBar.res"
+},
+"VR_Environment_MainDisplay": {
+"generate/lightmap_uv": 1,
+"generate/lods": 2,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://assets/meshes/VR_Environment_MainDisplay.res"
+},
+"VR_Environment_RoofLight": {
+"generate/lightmap_uv": 1,
+"generate/lods": 2,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://assets/meshes/VR_Environment_RoofLight.res"
+},
+"VR_Environment_Room": {
+"generate/lightmap_uv": 1,
+"generate/lods": 2,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://assets/meshes/VR_Environment_Room.res"
+},
+"VR_Environment_SciFiContainer": {
+"generate/lightmap_uv": 1,
+"generate/lods": 2,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://assets/meshes/VR_Environment_SciFiContainer.res"
+},
+"VR_Environment_Shelf": {
+"generate/lightmap_uv": 1,
+"generate/lods": 2,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://assets/meshes/VR_Environment_Shelf.res"
+},
+"VR_Environment_Table": {
+"generate/lightmap_uv": 1,
+"generate/lods": 2,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://assets/meshes/VR_Environment_Table.res"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

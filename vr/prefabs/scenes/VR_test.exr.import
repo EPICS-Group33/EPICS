@@ -1,0 +1,26 @@
+[remap]
+
+importer="2d_array_texture"
+type="CompressedTexture2DArray"
+uid="uid://36l0csvgnc38"
+path="res://.godot/imported/VR_test.exr-31c54b60a416f9898ec86f96df659b07.ctexarray"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://prefabs/scenes/VR_test.exr"
+dest_files=["res://.godot/imported/VR_test.exr-31c54b60a416f9898ec86f96df659b07.ctexarray"]
+
+[params]
+
+compress/mode=3
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/channel_pack=1
+mipmaps/generate=false
+mipmaps/limit=-1
+slices/horizontal=1
+slices/vertical=2

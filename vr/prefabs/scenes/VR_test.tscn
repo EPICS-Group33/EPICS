@@ -5,6 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://xqimcf20s2jp" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_fullglove_low.tscn" id="3_6nmue"]
 [ext_resource type="Texture2D" uid="uid://curt0widd3tco" path="res://assets/spritesheets/spritesheet.png" id="4_aig32"]
 [ext_resource type="Script" path="res://scripts/3Dscroll.gd" id="5_vtf44"]
+[ext_resource type="PackedScene" uid="uid://bmyudtwvevupy" path="res://prefabs/scenes/vr_environment.tscn" id="6_xftdy"]
+[ext_resource type="LightmapGIData" uid="uid://b8c2j6v0aiyjs" path="res://prefabs/scenes/VR_test.lmbake" id="7_wi82x"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ysnek"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -14,15 +16,12 @@ ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
 sky_material = SubResource("ProceduralSkyMaterial_ysnek")
 
 [sub_resource type="Environment" id="Environment_ojlem"]
-background_mode = 2
+background_mode = 1
 sky = SubResource("Sky_p0llm")
-tonemap_mode = 2
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_wiign"]
-size = Vector3(5, 0.1, 5)
-
-[sub_resource type="BoxMesh" id="BoxMesh_0cacy"]
-size = Vector3(5, 0.1, 5)
+ambient_light_source = 1
+reflected_light_source = 1
+tonemap_mode = 3
+volumetric_fog_enabled = true
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_dothv")
@@ -31,10 +30,11 @@ script = ExtResource("1_dothv")
 environment = SubResource("Environment_ojlem")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 5, 0)
 shadow_enabled = true
 
 [node name="XROrigin3D" type="XROrigin3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.52533)
 
 [node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
@@ -53,15 +53,30 @@ tracker = &"right_hand"
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.13951, -2.72659)
+visible = false
 billboard = 1
 texture = ExtResource("4_aig32")
 hframes = 36
 script = ExtResource("5_vtf44")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
+[node name="VR_Environment" parent="." instance=ExtResource("6_xftdy")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-shape = SubResource("BoxShape3D_wiign")
+[node name="ReflectionProbe" type="ReflectionProbe" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.44425, 0)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D/CollisionShape3D"]
-mesh = SubResource("BoxMesh_0cacy")
+[node name="LightmapGI" type="LightmapGI" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+visible = false
+quality = 2
+interior = true
+light_data = ExtResource("7_wi82x")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 2.66606, -2.18402)
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 2.66606, 2.01364)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+light_size = 0.205
