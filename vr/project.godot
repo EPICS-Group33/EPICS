@@ -25,4 +25,5 @@ openxr/enabled=true
 openxr/default_action_map="res://components/openxr_action_map.tres"
 openxr/foveation_level=3
 openxr/foveation_dynamic=true
+openxr/extensions/eye_gaze_interaction=true
 shaders/enabled=true
