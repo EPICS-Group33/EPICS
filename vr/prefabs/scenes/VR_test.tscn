@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cqo6bm12uimmk"]
+[gd_scene load_steps=16 format=3 uid="uid://cqo6bm12uimmk"]
 
 [ext_resource type="Script" path="res://scripts/Main.gd" id="1_dothv"]
 [ext_resource type="PackedScene" uid="uid://bq86r4yll8po" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_fullglove_low.tscn" id="2_0r5y3"]
@@ -7,6 +7,8 @@
 [ext_resource type="Script" path="res://scripts/3Dscroll.gd" id="5_vtf44"]
 [ext_resource type="PackedScene" uid="uid://bmyudtwvevupy" path="res://prefabs/scenes/vr_environment.tscn" id="6_xftdy"]
 [ext_resource type="LightmapGIData" uid="uid://b8c2j6v0aiyjs" path="res://prefabs/scenes/VR_test.lmbake" id="7_wi82x"]
+[ext_resource type="Script" path="res://addons/volume_layered_shader/scenes/controls/volume_layered_shader.gd" id="8_wn7x1"]
+[ext_resource type="Script" path="res://addons/volume_layered_shader/scripts/resources/cpu/zipped_image_archive_cpu_Texture3D.gd" id="9_6nxxn"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ysnek"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -22,6 +24,18 @@ ambient_light_source = 1
 reflected_light_source = 1
 tonemap_mode = 3
 volumetric_fog_density = 0.01
+
+[sub_resource type="ImageTexture3D" id="ImageTexture3D_jt5kp"]
+script = ExtResource("9_6nxxn")
+zip_file = "res://assets/zip/mri.zip"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_71igj"]
+transparency = 1
+depth_draw_mode = 2
+albedo_color = Color(1, 1, 1, 0)
+
+[sub_resource type="QuadMesh" id="QuadMesh_63pcd"]
+material = SubResource("StandardMaterial3D_71igj")
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_dothv")
@@ -82,3 +96,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0583218, 1.72834, 0.29382)
 light_size = 0.205
 light_specular = 0.0
 omni_range = 7.0
+
+[node name="VolumeLayeredShader" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1.49547, 0)
+script = ExtResource("8_wn7x1")
+texture = SubResource("ImageTexture3D_jt5kp")
+num_layers = 300
+exclusion_planes = Array[NodePath]([NodePath("../MeshInstance3D")])
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.50711, 0.599106)
+mesh = SubResource("QuadMesh_63pcd")
