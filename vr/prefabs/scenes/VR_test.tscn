@@ -21,7 +21,7 @@ sky = SubResource("Sky_p0llm")
 ambient_light_source = 1
 reflected_light_source = 1
 tonemap_mode = 3
-volumetric_fog_enabled = true
+volumetric_fog_density = 0.01
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_dothv")
@@ -78,5 +78,7 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 2.6
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 2.66606, 2.01364)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0583218, 1.72834, 0.29382)
 light_size = 0.205
+light_specular = 0.0
+omni_range = 7.0

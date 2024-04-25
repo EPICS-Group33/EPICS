@@ -15,6 +15,14 @@ run/main_scene="res://prefabs/scenes/VR_test.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+XRToolsUserSettings="*res://addons/godot-xr-tools/user_settings/user_settings.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot-xr-tools/plugin.cfg", "res://addons/volume_layered_shader/plugin.cfg")
+
 [rendering]
 
 textures/vram_compression/import_etc2_astc=true
