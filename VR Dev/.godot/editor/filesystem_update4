@@ -1,0 +1,5 @@
+res://VR_test.tscn
+res://addons/volume_layered_shader/textures/purple_gradient.tres
+res://addons/volume_layered_shader/materials/volume_layered_shader.tres
+res://addons/godot-xr-tools/hands/animations/left/hand_blend_tree.tres
+res://addons/godot-xr-tools/hands/animations/right/hand_blend_tree.tres
