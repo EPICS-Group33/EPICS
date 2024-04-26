@@ -5,9 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://xqimcf20s2jp" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_fullglove_low.tscn" id="3_6nmue"]
 [ext_resource type="Texture2D" uid="uid://curt0widd3tco" path="res://assets/spritesheets/spritesheet.png" id="4_aig32"]
 [ext_resource type="Script" path="res://scripts/3Dscroll.gd" id="5_vtf44"]
-[ext_resource type="PackedScene" uid="uid://bmyudtwvevupy" path="res://prefabs/scenes/vr_environment.tscn" id="6_xftdy"]
-[ext_resource type="LightmapGIData" uid="uid://b8c2j6v0aiyjs" path="res://prefabs/scenes/VR_test.lmbake" id="7_wi82x"]
+[ext_resource type="LightmapGIData" uid="uid://dlifvaf7b0pxa" path="res://prefabs/scenes/vr_test.lmbake" id="6_nte4m"]
 [ext_resource type="Script" path="res://addons/volume_layered_shader/scenes/controls/volume_layered_shader.gd" id="8_wn7x1"]
+[ext_resource type="PackedScene" uid="uid://b1lugqt5dr8ya" path="res://prefabs/environments/vr_environment.tscn" id="9_4ot6s"]
 [ext_resource type="Script" path="res://addons/volume_layered_shader/scripts/resources/cpu/zipped_image_archive_cpu_Texture3D.gd" id="9_6nxxn"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ysnek"]
@@ -23,6 +23,7 @@ sky = SubResource("Sky_p0llm")
 ambient_light_source = 1
 reflected_light_source = 1
 tonemap_mode = 3
+glow_enabled = true
 volumetric_fog_density = 0.01
 
 [sub_resource type="ImageTexture3D" id="ImageTexture3D_vns6u"]
@@ -36,6 +37,21 @@ albedo_color = Color(1, 1, 1, 0)
 
 [sub_resource type="QuadMesh" id="QuadMesh_63pcd"]
 material = SubResource("StandardMaterial3D_71igj")
+
+[sub_resource type="Animation" id="Animation_vh0x8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.52647, 0.722912)]
+}
 
 [sub_resource type="Animation" id="Animation_3n5ws"]
 resource_name = "move"
@@ -52,21 +68,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(0, 1.52647, 0.722912), Vector3(0, 1.52647, -0.661028)]
-}
-
-[sub_resource type="Animation" id="Animation_vh0x8"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 1.52647, 0.722912)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rbauf"]
@@ -104,23 +105,22 @@ tracker = &"right_hand"
 [node name="RightHand" parent="XROrigin3D/RightHand" instance=ExtResource("3_6nmue")]
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(-1.5299e-08, 0, 0.35, 0, 0.35, 0, -0.35, 0, -1.5299e-08, -2.35391, 1.89586, 1.09292)
+transform = Transform3D(-1.5299e-08, 0, 0.35, 0, 0.35, 0, -0.35, 0, -1.5299e-08, -3.87306, 1.67458, 1.66131)
 texture = ExtResource("4_aig32")
 hframes = 36
 script = ExtResource("5_vtf44")
-
-[node name="VR_Environment" parent="." instance=ExtResource("6_xftdy")]
 
 [node name="ReflectionProbe" type="ReflectionProbe" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.44425, 0)
 
 [node name="LightmapGI" type="LightmapGI" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+visible = false
 quality = 2
 bounces = 7
 interior = true
 generate_probes_subdiv = 3
-light_data = ExtResource("7_wi82x")
+light_data = ExtResource("6_nte4m")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 2.66606, -2.18402)
@@ -132,13 +132,15 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 2.6
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0583218, 1.72834, 0.29382)
 light_size = 0.205
 light_specular = 0.0
-omni_range = 7.0
+light_bake_mode = 1
+omni_range = 47.88
 
 [node name="VolumeLayeredShader" type="Node3D" parent="."]
-transform = Transform3D(-4.37114e-08, -1, 0, -4.37114e-08, 1.91069e-15, -1, 1, -4.37114e-08, -4.37114e-08, 0, 1.49547, 0)
+transform = Transform3D(-4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 0, 1.49547, 0)
 script = ExtResource("8_wn7x1")
 texture = SubResource("ImageTexture3D_vns6u")
 num_layers = 300
+gamma = 2.362
 exclusion_planes = Array[NodePath]([NodePath("../MeshInstance3D")])
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
@@ -149,3 +151,5 @@ mesh = SubResource("QuadMesh_63pcd")
 libraries = {
 "": SubResource("AnimationLibrary_rbauf")
 }
+
+[node name="VR_Environment" parent="." instance=ExtResource("9_4ot6s")]

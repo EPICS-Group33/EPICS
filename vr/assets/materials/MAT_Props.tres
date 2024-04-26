@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dxeeit6w4y2u1"]
+
+[resource]
+resource_name = "MAT_Props"
+cull_mode = 2
+albedo_color = Color(0.906501, 0, 0.0232278, 1)
+roughness = 0.5

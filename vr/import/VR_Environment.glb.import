@@ -31,9 +31,33 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "materials": {
-"TEMP_MAT_Laboratory": {
+"MAT_BrickWall": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/materials/TEMP_MAT_Laboratory.res"
+"use_external/path": "res://assets/materials/MAT_BrickWall.tres"
+},
+"MAT_Emmision": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/materials/MAT_Emmision.tres"
+},
+"MAT_Furnishings": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/materials/MAT_Furnishings.tres"
+},
+"MAT_LoadingBar": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/materials/MAT_LoadingBar.tres"
+},
+"MAT_PlasterCeiling": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/materials/MAT_PlasterCeiling.tres"
+},
+"MAT_Props": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/materials/MAT_Props.tres"
+},
+"MAT_TiledFloor": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/materials/MAT_TiledFloor.tres"
 }
 },
 "meshes": {
@@ -66,16 +90,6 @@ _subresources={
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://assets/meshes/VR_Environment_Lamp.res"
-},
-"VR_Environment_LoadingBar": {
-"generate/lightmap_uv": 1,
-"generate/lods": 2,
-"generate/shadow_meshes": 0,
-"lods/normal_merge_angle": 60.0,
-"lods/normal_split_angle": 25.0,
-"save_to_file/enabled": true,
-"save_to_file/make_streamable": "",
-"save_to_file/path": "res://assets/meshes/VR_Environment_LoadingBar.res"
 },
 "VR_Environment_MainDisplay": {
 "generate/lightmap_uv": 1,
