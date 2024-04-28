@@ -1,7 +1,26 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://7voykd58dksp"]
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://7voykd58dksp"]
+
+[ext_resource type="Texture2D" uid="uid://efki0mcrjf8e" path="res://assets/textures/brick_wall/bricks_wall_color_1k.png" id="1_lyc87"]
+[ext_resource type="Texture2D" uid="uid://bdoe1xbxcvbe6" path="res://assets/textures/brick_wall/bricks_wall_ambient_occlusion_1k.png" id="2_38ies"]
+[ext_resource type="Texture2D" uid="uid://bshij6bbvqvgc" path="res://assets/textures/brick_wall/bricks_wall_height_1k.png" id="3_m2uxw"]
+[ext_resource type="Texture2D" uid="uid://v1ermble3bpu" path="res://assets/textures/brick_wall/bricks_wall_normal_gl_1k.png" id="4_o7p3j"]
+[ext_resource type="Texture2D" uid="uid://xsbh4o5se0vo" path="res://assets/textures/brick_wall/bricks_wall_roughness_1k.png" id="5_kdisi"]
 
 [resource]
 resource_name = "MAT_BrickWall"
 cull_mode = 2
-albedo_color = Color(0, 0.618229, 0.906581, 1)
-roughness = 0.5
+albedo_texture = ExtResource("1_lyc87")
+roughness_texture = ExtResource("5_kdisi")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("4_o7p3j")
+ao_enabled = true
+ao_texture = ExtResource("2_38ies")
+ao_texture_channel = 4
+heightmap_enabled = true
+heightmap_deep_parallax = true
+heightmap_min_layers = 8
+heightmap_max_layers = 32
+heightmap_texture = ExtResource("3_m2uxw")
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true

@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="vr deployment"
+config/name="vr"
 run/main_scene="res://prefabs/scenes/VR_test.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"

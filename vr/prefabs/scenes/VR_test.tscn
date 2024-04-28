@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://scripts/3Dscroll.gd" id="5_vtf44"]
 [ext_resource type="LightmapGIData" uid="uid://dlifvaf7b0pxa" path="res://prefabs/scenes/vr_test.lmbake" id="6_nte4m"]
 [ext_resource type="Script" path="res://addons/volume_layered_shader/scenes/controls/volume_layered_shader.gd" id="8_wn7x1"]
-[ext_resource type="PackedScene" uid="uid://b1lugqt5dr8ya" path="res://prefabs/environments/vr_environment.tscn" id="9_4ot6s"]
+[ext_resource type="PackedScene" uid="uid://buylw6q2djig" path="res://prefabs/environments/vr_environment.tscn" id="9_4ot6s"]
 [ext_resource type="Script" path="res://addons/volume_layered_shader/scripts/resources/cpu/zipped_image_archive_cpu_Texture3D.gd" id="9_6nxxn"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ysnek"]
@@ -24,6 +24,7 @@ ambient_light_source = 1
 reflected_light_source = 1
 tonemap_mode = 3
 glow_enabled = true
+volumetric_fog_enabled = true
 volumetric_fog_density = 0.01
 
 [sub_resource type="ImageTexture3D" id="ImageTexture3D_vns6u"]
@@ -82,15 +83,12 @@ script = ExtResource("1_dothv")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_ojlem")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 5, 0)
-shadow_enabled = true
-
 [node name="XROrigin3D" type="XROrigin3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.52533)
 
 [node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+current = true
 
 [node name="LeftHand" type="XRController3D" parent="XROrigin3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, -0.5)
@@ -123,31 +121,39 @@ generate_probes_subdiv = 3
 light_data = ExtResource("6_nte4m")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 2.66606, -2.18402)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2.03419, 2.88947, -1.97942)
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 2.66606, 2.01364)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2.02772, 2.80472, 2.01364)
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 1.99883, 2.88947, -1.97942)
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 2.0053, 2.80472, 2.01364)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0583218, 1.72834, 0.29382)
 light_size = 0.205
 light_specular = 0.0
 light_bake_mode = 1
+editor_only = true
 omni_range = 47.88
 
 [node name="VolumeLayeredShader" type="Node3D" parent="."]
-transform = Transform3D(-4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 0, 1.49547, 0)
+transform = Transform3D(-3.21279e-08, -0.735, 3.21279e-08, 0, -3.21279e-08, -0.735, 0.735, -3.21279e-08, 1.40435e-15, 0, 1.82423, 0)
 script = ExtResource("8_wn7x1")
 texture = SubResource("ImageTexture3D_vns6u")
 num_layers = 300
 gamma = 2.362
-exclusion_planes = Array[NodePath]([NodePath("../MeshInstance3D")])
+color_scalar = 1.163
+exclusion_planes = Array[NodePath]([NodePath("../ExclusionPlane")])
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="ExclusionPlane" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.52647, 0.722912)
 mesh = SubResource("QuadMesh_63pcd")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="MeshInstance3D"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ExclusionPlane"]
 libraries = {
 "": SubResource("AnimationLibrary_rbauf")
 }
