@@ -1,0 +1,8 @@
+SpotLight3D
+AnimationPlayer
+AnimationTree
+MeshInstance3D
+VolumeLayeredShader
+OmniLight3D
+LightmapGI
+ReflectionProbe
