@@ -4,7 +4,7 @@ import cv2
 import pandas as pd
 from tqdm import tqdm
 import tensorflow as tf
-from tensorflow.keras.utils import CustomObjectScope
+from keras.utils import CustomObjectScope
 from sklearn.metrics import f1_score, jaccard_score, precision_score, recall_score
 from metrics import dice_loss, dice_coef
 from train import load_dataset
@@ -45,16 +45,28 @@ if __name__ == "__main__":
 
     # Load the pre-trained model
     with CustomObjectScope({"dice_coef": dice_coef, "dice_loss": dice_loss}):
-        model = tf.keras.models.load_model("files/model.h5")
+        model = tf.keras.models.load_model(
+            os.path.join(
+                os.getcwd(),
+                "files",
+                "model.h5"
+            )
+        )
 
     # Load test dataset
-    dataset_path = "/path/to/dataset"
+    dataset_path = os.path.join(
+        os.getcwd(),
+        ".",
+        "scans and masks",
+        "images"
+    )
     _, _, (test_images, test_masks) = load_dataset(dataset_path)
 
     # Evaluation metrics storage
     evaluation_scores = []
 
     for img_path, mask_path in tqdm(zip(test_images, test_masks), total=len(test_masks)):
+        
         # Read and preprocess the image
         image = cv2.imread(img_path, cv2.IMREAD_COLOR)
         image_resized = cv2.resize(image, (IMAGE_WIDTH, IMAGE_HEIGHT))
