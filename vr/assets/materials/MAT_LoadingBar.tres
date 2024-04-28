@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cky04y6l4sd7v"]
+
+[resource]
+resource_name = "MAT_LoadingBar"
+cull_mode = 2
+albedo_color = Color(0, 0.906647, 0.216785, 1)
+roughness = 0.5
