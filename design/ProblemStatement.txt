@@ -1,0 +1,32 @@
+Problem Statement
+	During COVID-19, there was a finding that almost 70% of traffic into hospitals and emergency services were non critical, ie, they were either trivial or some sort of regular checkups or false alarms. Due to this there is a gross misallocation of resources in the medical industry. This can be avoided with proper edification and awareness, but this is also affected by the wider access to the medical and health related resouurces, which has affected peoples ability to discern reliable information.
+
+Proposed Feature List:
+	Daily Health Tracking
+		Height
+		Weight
+		BMI		
+		Hydration
+		Exercise Goal
+		Sleep
+		...
+	Passive Health Tracking
+		Blood Report
+		MRI - Classification, Tracking
+		XRay - Classification, Tracking
+		...
+	Active Health Tracking
+		IoT - Sensors
+		Mobile
+		SmartWatch
+		...
+	General Health Advisory
+	Travel Advisory
+	Outbreaks
+	Health Articles
+	Commmunication Facility with Experts
+
+Implemented:
+	None.
+
+	

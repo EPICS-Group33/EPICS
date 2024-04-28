@@ -1,5 +1,2 @@
-res://scenes/mri_scroll.tscn
-res://assets/shaders/slice_viewer.gdshader
 res://scenes/main.scn
-res://components/navbar/navbar.tscn
-res://scenes/user-dashboard.scn
+res://assets/shaders/slice_viewer.gdshader

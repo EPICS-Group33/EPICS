@@ -1,0 +1,134 @@
+[gd_scene load_steps=2 format=3 uid="uid://3wemqhw0xl3n"]
+
+[ext_resource type="Script" path="res://assets/scripts/user_auth.gd" id="1_vxx0b"]
+
+[node name="User Auth Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vxx0b")
+metadata/_edit_use_anchors_ = true
+
+[node name="TabContainer" type="TabContainer" parent="."]
+clip_contents = true
+custom_minimum_size = Vector2(0, 360)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = -125.0
+offset_right = 125.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+tab_alignment = 1
+
+[node name="Signup" type="Panel" parent="TabContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Signup"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Signup/MarginContainer"]
+layout_mode = 2
+
+[node name="Username" type="LineEdit" parent="TabContainer/Signup/MarginContainer/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Username"
+
+[node name="Email" type="LineEdit" parent="TabContainer/Signup/MarginContainer/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Email"
+
+[node name="Password" type="LineEdit" parent="TabContainer/Signup/MarginContainer/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Password"
+secret = true
+
+[node name="Confirm Password" type="LineEdit" parent="TabContainer/Signup/MarginContainer/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Confirm Password"
+secret = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Signup/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Signup Button" type="Button" parent="TabContainer/Signup/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Signup"
+
+[node name="CheckBox" type="CheckBox" parent="TabContainer/Signup/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "Remember Me"
+
+[node name="Signup Warning" type="Label" parent="TabContainer/Signup/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Login" type="Panel" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Login"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Login/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Username" type="LineEdit" parent="TabContainer/Login/MarginContainer/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Username"
+
+[node name="Password" type="LineEdit" parent="TabContainer/Login/MarginContainer/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Password"
+secret = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Login/MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Login Button" type="Button" parent="TabContainer/Login/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Login
+"
+
+[node name="CheckBox" type="CheckBox" parent="TabContainer/Login/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "Remember Me"
+
+[node name="Login Warning" type="Label" parent="TabContainer/Login/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_http_request_request_completed"]

@@ -1,4 +1,8 @@
+app/.godot/
+app/export/web/
+app/export/android/
+app/export/pc/
 
-app/.godot/editor/filesystem_cache8
-app/.godot/editor/recent_dirs
-app/.godot/uid_cache.bin
+test/.env
+
+test/node_modules
