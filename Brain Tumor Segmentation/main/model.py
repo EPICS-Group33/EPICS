@@ -2,6 +2,7 @@ import tensorflow as tf
 from keras.layers import Conv2D, BatchNormalization, Activation, MaxPool2D, Conv2DTranspose, Concatenate, Input
 from keras.models import Model
 tf.config.list_physical_devices("GPU")
+
 def convolutional_block(input_tensor, num_filters):
     """
     Creates a convolutional block with two Conv2D layers, each followed by BatchNormalization and ReLU activation.

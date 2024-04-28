@@ -8,8 +8,8 @@ from tensorflow.keras.utils import CustomObjectScope
 from sklearn.metrics import f1_score, jaccard_score, precision_score, recall_score
 from metrics import dice_loss, dice_coef
 from train import load_dataset
-tf.config.list_physical_devices("GPU")
 
+tf.config.list_physical_devices("GPU")
 
 # Setting TensorFlow log level to minimize verbose outputs
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
