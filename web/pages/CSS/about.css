@@ -195,6 +195,15 @@
   align-items: center;
   justify-content: center;
 }
+
+.about-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 .about-container2 {
   gap: var(--dl-space-space-unit);
   display: flex;
@@ -472,5 +481,69 @@
   .about-text24 {
     text-align: center;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+}
+
+.about-team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.about-team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.about-team-member-info {
+  flex: 1;
+}
+
+.about-team-member-info h3 {
+  margin-bottom: 0.5rem;
+}
+
+.about-team-member-info p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-team-member {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-team-member img {
+    margin-bottom: 1rem;
+  }
+}
+
+.about-team {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1100px) {
+  .about-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .about-team-grid {
+    grid-template-columns: 1fr;
   }
 }
