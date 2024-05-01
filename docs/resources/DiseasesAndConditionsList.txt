@@ -1,6 +1,5 @@
 https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/
 
-A
 Abdominal aortic aneurysm
 Acne
 Acute cholecystitis
@@ -34,8 +33,7 @@ Atopic eczema
 Atrial fibrillation
 Attention deficit hyperactivity disorder (ADHD)
 Autistic spectrum disorder (ASD)
- Back to top
-B
+
 Bacterial vaginosis
 Benign prostate enlargement
 Bile duct cancer (cholangiocarcinoma)
@@ -58,8 +56,7 @@ Bronchiectasis
 Bronchitis
 Bulimia
 Bunion
- Back to top
-C
+
 Carcinoid syndrome and carcinoid tumours
 Catarrh
 Cellulitis
@@ -93,8 +90,7 @@ Crohn’s disease
 Croup
 Cystic fibrosis
 Cystitis
- Back to top
-D
+
 Deafblindness
 Deep vein thrombosis
 Dehydration
@@ -112,8 +108,7 @@ Down’s syndrome
 Dry mouth
 Dysphagia (swallowing problems)
 Dystonia
- Back to top
-E
+
 Earache
 Earwax build-up
 Ebola virus disease
@@ -126,8 +121,7 @@ Escherichia coli (E. coli) O157
 Ewing sarcoma
 Ewing sarcoma: Children
 Eye cancer
- Back to top
-F
+
 Febrile seizures
 Feeling of something in your throat (Globus)
 Fever in adults
@@ -140,8 +134,7 @@ Foetal alcohol syndrome
 Food poisoning
 Functional neurological disorder (FND)
 Fungal nail infection
- Back to top
-G
+
 Gallbladder cancer
 Gallstones
 Ganglion cyst
@@ -155,8 +148,7 @@ Glandular fever
 Gonorrhoea
 Gout
 Gum disease
- Back to top
-H
+
 Haemorrhoids (piles)
 Hand, foot and mouth disease
 Hay fever
@@ -179,7 +171,7 @@ Huntington’s disease
 Hyperglycaemia (high blood sugar)
 Hyperhidrosis
 Hypoglycaemia (low blood sugar)
- Back to top
+
 I
 Idiopathic pulmonary fibrosis
 Impetigo
