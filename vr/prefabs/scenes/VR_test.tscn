@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://xqimcf20s2jp" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_fullglove_low.tscn" id="3_6nmue"]
 [ext_resource type="Texture2D" uid="uid://curt0widd3tco" path="res://assets/spritesheets/spritesheet.png" id="4_aig32"]
 [ext_resource type="Script" path="res://scripts/3Dscroll.gd" id="5_vtf44"]
-[ext_resource type="LightmapGIData" uid="uid://dlifvaf7b0pxa" path="res://prefabs/scenes/vr_test.lmbake" id="6_nte4m"]
+[ext_resource type="LightmapGIData" uid="uid://dlifvaf7b0pxa" path="res://prefabs/scenes/VR_test.lmbake" id="6_nte4m"]
 [ext_resource type="Script" path="res://addons/volume_layered_shader/scenes/controls/volume_layered_shader.gd" id="8_wn7x1"]
 [ext_resource type="PackedScene" uid="uid://buylw6q2djig" path="res://prefabs/environments/vr_environment.tscn" id="9_4ot6s"]
 [ext_resource type="Script" path="res://addons/volume_layered_shader/scripts/resources/cpu/zipped_image_archive_cpu_Texture3D.gd" id="9_6nxxn"]
@@ -84,7 +84,7 @@ script = ExtResource("1_dothv")
 environment = SubResource("Environment_ojlem")
 
 [node name="XROrigin3D" type="XROrigin3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.52533)
+transform = Transform3D(0.999871, 0, -0.0160912, 0, 1, 0, 0.0160912, 0, 0.999871, 0, 0, 1.52533)
 
 [node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
